@@ -1,11 +1,12 @@
 # RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial
-Render markdown with ReactJS using the express framework, browserify for dependency resolution, the gulp build system, and jade templateing.
+Render markdown with ReactJS using the express framework, browserify for dependency resolution, the gulp build system, and jade templating.
 
+## Gulpfile
 Setting up your views, routes directories, making your package.json: installing dependencies( node modules, express, gulp, browserify )...
 
 1. set up directory tree
-2. Set up **package.json** by running **npm init** at the top level of the app. Keep hitting **enter** until you run out of options. This will result in an empty **package.json** file.
-3. Next, we will tell **npm** to download all of the dependencies for this application and save them in a **node_modules** directory. We will install the necessary modules for using **Gulp**, a build system which will:
+2. Set up `package.json` by running `npm init` at the top level of the app. Accept all the default options. This will result in an empty `package.json` file.
+3. Next, we will tell `npm` to download all of the dependencies for this application and save them in a `node_modules` directory. We will install the necessary modules for using **Gulp**, a build system which will:
   - transform our JSX files in to JS and save output in (directory name)
   - copy our index.jade file from d(direct) to (direcotyr name)...
   - then it will watch for changes in all jade and JSX files (without gulp, we could have to do a lot more work every time we make changes to the app)
@@ -50,3 +51,4 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var reactify = require('reactify');
     ```
+    As a tool, **Gulp** packages up the code that you wrote so that it can be transferred to a separate place where **Browserify** can 
