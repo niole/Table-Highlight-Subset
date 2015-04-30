@@ -5,10 +5,11 @@ Setting up your views, routes directories, making your package.json: installing 
 
 1. set up directory tree
 2. Set up **package.json** by running **npm init** at the top level of the app. Keep hitting **enter** until you run out of options. This will result in an empty **package.json** file.
-3. Next, we will tell **npm** to download all of the dependencies for this application and save them in a **node_modules** directory. First we will install the necessary modules for using Gulp, the build system which will:
-  - transform our JSX files in to JS and save output in (...)
-  - copy our index.jade file from ... to ...
+3. Next, we will tell **npm** to download all of the dependencies for this application and save them in a **node_modules** directory. We will install the necessary modules for using **Gulp**, a build system which will:
+  - transform our JSX files in to JS and save output in (directory name)
+  - copy our index.jade file from d(direct) to (direcotyr name)...
   - then it will watch for changes in all jade and JSX files (without gulp, we could have to do a lot more work every time we make changes to the app)
+  We will also install the necessary modules for using **Browserify**, a CommonJS loader which oversees dependency resolution and allows you to require modules on the client side of your app.
 
 ```
 npm install --save-dev gulp;
@@ -16,4 +17,23 @@ npm install --save-dev gulp-concat;
 npm install --save-dev gulp-uglify;
 npm install --save-dev gulp-react;
 npm install --save-dev gulp-html-replace;
+npm install --save-dev gulp-inject;
+npm install --save-dev gulp-streamify;
+npm install --save-dev vinyl-source-stream;
+npm install --save-dev vinyl-buffer;
+npm install --save-dev browserify;
+npm install --save-dev watchify;
+npm install --save-dev reactify;
+```
+4. Now your package.json should be full of stuff.
+5. At top level of the app, create **gulpfile.js** and save at top of file:
+```
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var inject = require('gulp-inject');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
+var browserify = require('browserify');
+var watchify = require('watchify');
+var reactify = require('reactify');
 ```
