@@ -25,7 +25,18 @@ npm install --save-dev browserify;
 npm install --save-dev watchify;
 npm install --save-dev reactify;
 ```
-4. Now your package.json should be full of stuff.
+4. Now your package.json should be full of stuff. While you're here, you might as well also tell npm to download and install all the other things that we're going to need to make our app express/react/jade app run. Next run: 
+```
+npm install --save body-parser;
+npm install --save cookie-parser;
+npm install --save debug;
+npm install --save dotenv;
+npm install --save express;
+npm install --save jade;
+npm install --save morgan;
+npm install --save react;
+npm install --save serve-favicon;
+```
 5. At top level of the app, create **gulpfile.js** and save at top of file:
 ```
 var gulp = require('gulp');
