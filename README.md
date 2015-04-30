@@ -110,6 +110,8 @@ gulp.task('watch', ['replaceHTMLsrc'], function() {
 });
     ```
     Gulp's default task is to watch and wait for changes in the JSX files which `path.ENTRY_POINT` specifies the top level of (This is just a sample of the code you need, copy the actual gulpfile.js code from the github repo). All of the other tasks `'replaceHTMLsrc'` and `'copy'` initiate the copying and modification of files by gulp. Browserify takes care of lumping these files together, following the dependency tree and modifying the JADE file at `path.DEST`. 
+
+##App.js
     
 8. To complete the top level of the app, let's create our `app.js' file. This file hooks up many of the routes that express needs to run. We will tell express where the app's views will be, where the routes required for serving the app online and for talking to the mongodb database will be, what port mongodb will be on et c ..
 
