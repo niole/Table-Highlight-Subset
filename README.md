@@ -51,4 +51,80 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var reactify = require('reactify');
     ```
-    As a tool, **Gulp** packages up the code that you wrote so that it can be transferred to a separate place where **Browserify** can 
+    As a tool, **Gulp** packages up code so that it can be transferred to a separate place from which **Browserify** can interact with it. To acheive this, our `gulpfile.js` must specify the *paths* this code takes, the code, and its destination.
+    
+6. Next, in the gulpfile we create the *path* object:
+
+    ```javascript
+var path = {
+  HTML: 'frontend/index.jade',
+  MINIFIED_OUT: 'build.min.js',
+  OUT: 'build.js',
+  DEST: 'views/',
+  DEST_BUILD: 'public/js/',
+  DEST_SRC: 'public/src/',
+  ENTRY_POINT: './frontend/App.jsx'
+};
+    ```
+  This *path* object identifies 
+  
+7. Next, we create the tasks that **Gulp** will complete.
+
+    ```javascript
+gulp.task('copy', function(){
+  gulp.src(path.HTML)
+  .pipe(gulp.dest(path.DEST));
+});
+
+gulp.task('replaceHTMLsrc', function(){
+  var sources = gulp.src([path.DEST_SRC + '*.js'], {read: false});
+
+  gulp.src(path.HTML)
+  .pipe(inject(sources, { ignorePath: 'public' }))
+  .pipe(gulp.dest(path.DEST));
+});
+
+gulp.task('watch', ['replaceHTMLsrc'], function() {
+  gulp.watch(path.HTML, ['copy']);
+  //gulp.watch(path.HTML, ['replaceHTMLsrc']);
+ var watcher  = watchify(browserify({
+    entries: [path.ENTRY_POINT],
+    transform: [reactify],
+    debug: true,
+    cache: {}, packageCache: {}, fullPaths: true
+  }));
+
+  return watcher.on('update', function () {
+    watcher.bundle()
+    .pipe(source(path.OUT))
+    .pipe(gulp.dest(path.DEST_SRC));
+    console.log('Updated');
+  })
+  .bundle()
+  .pipe(source(path.OUT))
+  .pipe(gulp.dest(path.DEST_SRC));
+});
+gulp.task('build', function(){
+ browserify({
+    entries: [path.ENTRY_POINT],
+    transform: [reactify]
+  })
+  .bundle()
+  .pipe(source(path.MINIFIED_OUT))
+  .pipe(buffer())
+  .pipe(uglify())
+  .pipe(gulp.dest(path.DEST_BUILD));
+});
+
+gulp.task('replaceHTML', function(){
+  var sources = gulp.src([path.DEST_BUILD + '*.js'], {read: false});
+
+  gulp.src(path.HTML)
+  .pipe(inject(sources, { ignorePath: 'public' }))
+  .pipe(gulp.dest(path.DEST));
+});
+ 
+gulp.task('production', ['replaceHTML', 'build']);
+ 
+gulp.task('default', ['watch']);
+    ```
