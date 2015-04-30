@@ -191,25 +191,25 @@ app.use(express.static(path.join(__dirname, 'public')));
     In `views/` create a `layout.jade` file that looks like this:
 
     ```javascript
+
 doctype html
 html
     head
-    title= title
+        title= title
         link(rel='stylesheet', href='/stylesheets/style.css')
         script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src="http://fb.me/react-0.12.2.js")
         script(src="http://fb.me/JSXTransformer-0.12.2.js")
         script(src="http://code.jquery.com/jquery-1.10.0.min.js")
         script(src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js")
 
-  
         //Compiled and minified CSS
-        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css)
-  
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css")
+
         //Compiled and minified JavaScript
         script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js")
-  
     body
-    block content
+      block content
     ```
     These cdns reference online client libraries that we will be using in this app. Materialize-css will make everything beautiful and showdown converts markdown to html so that it can be rendered in the DOM. Be careful when using jade and make sure everything is properly indented otherwise you'll get errors.
     
@@ -219,8 +219,11 @@ html
     extends layout
   
     block content
-        h1(Rendered)
+        h1(Rendered Jade)
+        div(id="container")
         //- inject:js
+        |<script type="text/jsx" src="js/App.jsx"/>
+        |<script> type="text/jsx" src="js/Test.jsx"/>
         //- endinject
     ```
     
@@ -244,3 +247,38 @@ block content
   var router = express.Router();
     ```
     If we have a database at some point, we can add routes to this file, but for now it remains empty.
+
+13. Lastly, we will create a few JSX files with React code to make sure that everything's hooked up properly. We're using Gulp in conjunction with Browserify because Gulp translates JSX into JS and Browserify only deals with JS. React uses JSX syntax to create reusable component classes, which we will learn more about. For the moment we're going to create the `App.jsx` file that we referred to in the gulpfile with `path.ENTRY_POINT` and a `Test.jsx` file to quickly show how the module creation that Browserify and Gulp enable occurs and is used.
+    In `frontend/` create `App.jsx` and add the following:
+
+    ```javascript
+"use strict";
+/*global React*/
+  
+var React = require('react');
+var Test = require('./Test.jsx');
+  
+var App = React.render( <Test/>, $('#container')[0]);
+  
+module.exports = App;
+    ```
+    First, we're requiring the react module so we can code with react and then we're loading a separate module, 'Test', so that we can use the code written in test. In `var App = React.render( <Test/>, $('#container')[0]);`, the jquery selector, `$('#container')` attaches the Test module to a `div(id='container')` in the `frontend/index.jade` file from which it will be rendered. Exporting the contents of the module as `App` with `module.exports = App;` allows you to use the module elsewhere, be it in other modules or in the `index.jade` file e.g: `|<script type="text/jsx" src="js/App.jsx"/>`.
+    `Test.jsx`:
+    
+    ```javascript
+"use strict";
+/*global React*/
+ 
+var React = require('react');
+ 
+var Test = React.createClass({
+    render: function(){
+        return (
+            <h1>hola</h1>
+        );
+    }
+ });
+ 
+ module.exports = Test;
+    ```
+    
