@@ -12,7 +12,7 @@ Setting up your views, routes directories, making your package.json: installing 
   - then it will watch for changes in all jade and JSX files (without gulp, we could have to do a lot more work every time we make changes to the app)
   We will also install the necessary modules for using **Browserify**, a CommonJS loader which oversees dependency resolution and allows you to require modules on the client side of your app.
 
-    ```
+    ```sh
 npm install --save-dev gulp;
 npm install --save-dev gulp-concat;
 npm install --save-dev gulp-uglify;
@@ -28,7 +28,7 @@ npm install --save-dev reactify;
     ```
 4. Now your package.json should be full of stuff. While you're here, you might as well also tell npm to download and install all the other things that we're going to need to make our app express/react/jade app run. Next run: 
 
-    ```
+    ```sh
 npm install --save body-parser;
 npm install --save cookie-parser;
 npm install --save debug;
@@ -41,7 +41,7 @@ npm install --save serve-favicon;
     ```
 5. At top level of the app, create **gulpfile.js** and save at top of file:
 
-    ```
+    ```javascript
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var inject = require('gulp-inject');
