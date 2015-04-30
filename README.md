@@ -10,9 +10,10 @@ Setting up your views, routes directories, making your package.json: installing 
   - copy our index.jade file from ... to ...
   - then it will watch for changes in all jade and JSX files (without gulp, we could have to do a lot more work every time we make changes to the app)
 
-
+```
 npm install --save-dev gulp;
 npm install --save-dev gulp-concat;
 npm install --save-dev gulp-uglify;
 npm install --save-dev gulp-react;
 npm install --save-dev gulp-html-replace;
+```
