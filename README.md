@@ -262,7 +262,7 @@ var App = React.render( <Test/>, $('#container')[0]);
   
 module.exports = App;
     ```
-    First, we're requiring the react module so we can code with react and then we're loading a separate module, 'Test', so that we can use the code written in test. In `var App = React.render( <Test/>, $('#container')[0]);`, the jquery selector, `$('#container')` attaches the Test module to a `div(id='container')` in the `frontend/index.jade` file from which it will be rendered. Exporting the contents of the module as `App` with `module.exports = App;` allows you to use the module elsewhere, be it in other modules or in the `index.jade` file e.g: `|<script type="text/jsx" src="js/App.jsx"/>`.
+    First, we're requiring the react module so we can code with react and then we're loading a separate module, 'Test', so that we can use the code written in test. In `var App = React.render( <Test/>, $('#container')[0]);`, the jquery selector, `$('#container')` attaches the Test module to a `div(id='container')` in the `frontend/index.jade` file from which it will be rendered. Exporting the contents of the module as `App` with `module.exports = App;` allows you to use the module elsewhere, be it in other modules or in the **`index.jade`** file e.g: `|<script type="text/jsx" src="js/App.jsx"/>`.
     
     **`Test.jsx`**:
     
@@ -275,7 +275,7 @@ var React = require('react');
 var Test = React.createClass({
     render: function(){
         return (
-            <h1>hola</h1>
+            <h1>*BOOM*. Boilerplate!</h1>
         );
     }
  });
@@ -283,3 +283,4 @@ var Test = React.createClass({
  module.exports = Test;
     ```
     
+12. Lastly, go to the top level of your app and run **`gulp`** in its own window and watch gulp run through its tasks. When it looks like it's done, run **`npm start`** at the top level in its own window and then open your browser at **`localhost:3000`**.
