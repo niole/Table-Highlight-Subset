@@ -96,13 +96,5 @@ gulp.task('watch', ['replaceHTMLsrc'], function() {
   .pipe(source(path.OUT))
   .pipe(gulp.dest(path.DEST_SRC));
 });
-
-gulp.task('replaceHTMLsrc', function(){
-  var sources = gulp.src([path.DEST_SRC + '*.js'], {read: false});
-
-  gulp.src(path.JADE)
-  .pipe(inject(sources, { ignorePath: 'public' }))
-  .pipe(gulp.dest(path.DEST));
-});
     ```
     Gulp's default task is to watch and wait for changes in the JSX files which `path.ENTRY_POINT` specifies the top level of (This is just a sample of the code you need, copy the actual gulpfile.js code from the github repo). All of the other tasks `'replaceHTMLsrc'` and `'copy'` initiate the copying and modification of files by gulp. Browserify takes care of lumping these files together, following the dependency tree and modifying the JADE file at `path.DEST`. 
