@@ -4,7 +4,17 @@ Render markdown with ReactJS using the express framework, browserify for depende
 ## Gulpfile
 Setting up your views, routes directories, making your package.json: installing dependencies( node modules, express, gulp, browserify )...
 
-1. set up directory tree
+1. Set up directory tree. It should look like this:
+
+    ```
+    -frontend
+    -public
+      -js
+      -src
+      -stylesheets
+    -routes
+    -views
+    ```
 2. Set up `package.json` by running `npm init` at the top level of the app. Accept all the default options. This will result in an empty `package.json` file.
 3. Next, we will tell `npm` to download all of the dependencies for this application and save them in a `node_modules` directory. We will install the necessary modules for using **Gulp**, a build system which will:
   - transform our JSX files in to JS and save output in `path.DEST_SRC` or `public/src/`.
@@ -26,7 +36,7 @@ npm install --save-dev browserify;
 npm install --save-dev watchify;
 npm install --save-dev reactify;
     ```
-4. Now your package.json should be full of stuff. While you're here, you might as well also tell npm to download and install all the other things that we're going to need to make our app express/react/jade app run. Next run: 
+4. Now your package.json should be full of stuff. While you're here, you might as well also tell npm to download and install all the other things that we're going to need to make our app express/react/jade app run. We will also throw in mongodb and the mongoskin driver. Next run: 
 
     ```sh
 npm install --save body-parser;
@@ -38,6 +48,8 @@ npm install --save jade;
 npm install --save morgan;
 npm install --save react;
 npm install --save serve-favicon;
+npm install --save mongodb;
+npm install --save mongoskin;
     ```
 5. At top level of the app, create **gulpfile.js** and save at top of file:
 
@@ -98,3 +110,36 @@ gulp.task('watch', ['replaceHTMLsrc'], function() {
 });
     ```
     Gulp's default task is to watch and wait for changes in the JSX files which `path.ENTRY_POINT` specifies the top level of (This is just a sample of the code you need, copy the actual gulpfile.js code from the github repo). All of the other tasks `'replaceHTMLsrc'` and `'copy'` initiate the copying and modification of files by gulp. Browserify takes care of lumping these files together, following the dependency tree and modifying the JADE file at `path.DEST`. 
+    
+8. To complete the top level of the app, let's create our `app.js' file. This file hooks up many of the routes that express needs to run. We will tell express where the app's views will be, where the routes required for serving the app online and for talking to the mongodb database will be, what port mongodb will be on et c ..
+
+   ```javascript
+var express = require('express');
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+  
+// Database
+var mongo = require('mongoskin');
+var db = mongo.db("mongodb://localhost:27017", {native_parser:true});
+
+var routes = require('./routes/index');
+var "..." = require('./routes/"..."');
+
+var app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded( { extended: true } ));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'public')));
+   ```
+  The above is not the entire app.js file. Copy it from the git repo.
