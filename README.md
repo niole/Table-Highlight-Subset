@@ -7,6 +7,7 @@ Setting up your views, routes directories, making your package.json: installing 
 1. Set up directory tree. It should look like this:
 
     ```
+    -bin
     -frontend
     -public
       -js
@@ -113,7 +114,6 @@ gulp.task('watch', ['replaceHTMLsrc'], function() {
 
 ##App.js
    
-    
     To complete the top level of the app, let's create the `app.js` file. Then we will create the `bin/www` file and update the `package.json` so that we can serve the app using `npm start`. This file hooks up many of the routes that express needs to run. We will tell express where the app's views will be, where the routes required for serving the app online and for talking to the mongodb database will be, what port mongodb will be on et c ..
 
    ```javascript
@@ -146,3 +146,101 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
    ```
   The above is not the entire app.js file. Copy it from the git repo.
+
+9. Next: `bin/www` and the corresponding `package.json` changes. Create a file called `www` in the `bin` directory and put this code in there:
+
+    ```javascript
+    #!/usr/bin/env node
+    var debug = require('debug')('my-application');
+    var app = require('../app');
+ 
+    app.set('port', process.env.PORT || 3000);
+ 
+    var server = app.listen(app.get('port'), function() {
+        debug('Express server listening on port ' + server.address().port);
+    });
+    ```
+    
+    On `npm start` this app will be served from `localhost:3000`. This means that express will be actively listening on port 3000 for network communication. Then modify the scripts part of the `package.json`:
+    
+    ```javascript
+    scripts: {
+        start: node ./bin/www
+    },
+    ```
+    
+10. Let us next hook up the most basic of routes for rendering the app's home page. In `routes/index.js`, add:
+
+    ```javascript
+ "use strict";
+ var express = require('express');
+ var router = express.Router();
+ 
+ /* GET home page. */
+ router.get('/', function(req, res) {
+   res.render('index', { title: 'Markdown' });
+ });
+ 
+ module.exports = router;
+     ```
+
+##Views
+
+11. Next we do a really simple view. First have to set up our jade files. Because of how Gulp copies the index.jade file from `path.JADE`, aka `frontend/index.jade` to `path.DEST` aka `views/`, the placement of the .jade files will be a little different from if we weren't using gulp and browserify.
+    Jade templating requires `error.jade`, `index.jade`, and `layout.jade` files. Express expects to find these files all in one place and we have told it to look for them in the `views` directory. As gulp processes and moves the `index.jade` file from `frontend/` to `views/`, the `index.jade` file that we make will be in `frontend/` and we will make all of the other jade files in `views/`.
+    In `views/` create a `layout.jade` file that looks like this:
+
+    ```javascript
+doctype html
+html
+    head
+    title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src="http://fb.me/JSXTransformer-0.12.2.js")
+        script(src="http://code.jquery.com/jquery-1.10.0.min.js")
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js")
+
+  
+        //Compiled and minified CSS
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css)
+  
+        //Compiled and minified JavaScript
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js")
+  
+    body
+    block content
+    ```
+    These cdns reference online client libraries that we will be using in this app. Materialize-css will make everything beautiful and showdown converts markdown to html so that it can be rendered in the DOM. Be careful when using jade and make sure everything is properly indented otherwise you'll get errors.
+    
+    Next, we will make an `index.jade` file in `frontend/`. Throw in a `<h1>Rendered</h1>` to make sure things are hooking up properly.
+    
+    ```javascript
+    extends layout
+  
+    block content
+        h1(Rendered)
+        //- inject:js
+        //- endinject
+    ```
+    
+    This is the body part of the jade template, which is where everything gets rendered. The code modules that we create will go between the commented out code. These commented out pieces aid **browserify** in finding the modules we made, bundling them into one giant js file, and then finally putting them back into the right place so they can be rendered.
+    Last, make the `error.jade` file:
+    
+    ```javascript
+extends layout
+      
+block content
+    h1= message
+    h2= error.status
+    pre #{error.stack}
+    ```
+    
+12. Make `rendermarkdown.js` file:
+
+    ```javascript
+  "use strict";
+  var express = require('express');
+  var router = express.Router();
+    ```
+    If we have a database at some point, we can add routes to this file, but for now it remains empty.
