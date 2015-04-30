@@ -66,9 +66,9 @@ var path = {
   ENTRY_POINT: './frontend/App.jsx'
 };
     ```
-  This *path* object identifies 
+
   
-7. Next, we create the tasks that **Gulp** will complete.
+7. Next, we create the tasks that **Gulp** will complete and tell it what paths to use.
 
     ```javascript
 gulp.task('copy', function(){
@@ -79,7 +79,7 @@ gulp.task('copy', function(){
 gulp.task('replaceHTMLsrc', function(){
   var sources = gulp.src([path.DEST_SRC + '*.js'], {read: false});
 
-  gulp.src(path.HTML)
+   gulp.src(path.HTML)
   .pipe(inject(sources, { ignorePath: 'public' }))
   .pipe(gulp.dest(path.DEST));
 });
@@ -128,3 +128,4 @@ gulp.task('production', ['replaceHTML', 'build']);
  
 gulp.task('default', ['watch']);
     ```
+    Gulp's default task is to watch, which waits around for 
