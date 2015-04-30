@@ -4,4 +4,4 @@ Render markdown with ReactJS using the express framework, browserify for depende
 Setting up your views, routes directories, making your package.json: installing dependencies( node modules, express, gulp, browserify )...
 
 1. set up directory tree
-2. set up package.json: at top level of directory run: *npm init*
+2. Set up *package.json* by running *npm init* at the top level of the app. Keep hitting *enter* until you run out of options. This will result in an empty *package.json* file.
