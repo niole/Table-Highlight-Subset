@@ -263,7 +263,8 @@ var App = React.render( <Test/>, $('#container')[0]);
 module.exports = App;
     ```
     First, we're requiring the react module so we can code with react and then we're loading a separate module, 'Test', so that we can use the code written in test. In `var App = React.render( <Test/>, $('#container')[0]);`, the jquery selector, `$('#container')` attaches the Test module to a `div(id='container')` in the `frontend/index.jade` file from which it will be rendered. Exporting the contents of the module as `App` with `module.exports = App;` allows you to use the module elsewhere, be it in other modules or in the `index.jade` file e.g: `|<script type="text/jsx" src="js/App.jsx"/>`.
-    `Test.jsx`:
+    
+    **`Test.jsx`**:
     
     ```javascript
 "use strict";
