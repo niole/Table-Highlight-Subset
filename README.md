@@ -114,7 +114,7 @@ gulp.task('watch', ['replaceHTMLsrc'], function() {
 ##App.js
    
     
-8. To complete the top level of the app, let's create our `app.js' file. This file hooks up many of the routes that express needs to run. We will tell express where the app's views will be, where the routes required for serving the app online and for talking to the mongodb database will be, what port mongodb will be on et c ..
+    To complete the top level of the app, let's create the `app.js` file. Then we will create the `bin/www` file and update the `package.json` so that we can serve the app using `npm start`. This file hooks up many of the routes that express needs to run. We will tell express where the app's views will be, where the routes required for serving the app online and for talking to the mongodb database will be, what port mongodb will be on et c ..
 
    ```javascript
 var express = require('express');
