@@ -50,6 +50,7 @@ npm install --save serve-favicon;
 npm install --save mongodb;
 npm install --save mongoskin;
     ```
+    
 5. At top level of the app, create **gulpfile.js** and save at top of file:
 
     ```javascript
@@ -68,7 +69,7 @@ var reactify = require('reactify');
 
     ```javascript
 var path = {
-  HTML: 'frontend/index.jade',
+  JADE: 'frontend/index.jade',
   MINIFIED_OUT: 'build.min.js',
   OUT: 'build.js',
   DEST: 'views/',
@@ -77,7 +78,6 @@ var path = {
   ENTRY_POINT: './frontend/App.jsx'
 };
     ```
-
 7. Next, we create the tasks that **Gulp** will complete and tell it what paths to use.
 
     ```javascript
