@@ -12,6 +12,7 @@ var Table = React.createClass({
   },
   getInitialState: function() {
     return ({
+      functionality: "highlight",
       sortOnTitle: null,
       displayTitle: null,
       range: [null, null],
@@ -53,6 +54,15 @@ var Table = React.createClass({
       data: sortedData
     });
   },
+  useSubSet: function(e){
+    e.preventDefault();
+    this.setState({functionality: "subset"});
+
+  },
+  useHighlight: function(e){
+    e.preventDefault();
+    this.setState({functionality: "highlight"});
+  },
   render: function() {
     var sortOnTitle = this.state.sortOnTitle;
     var TableBody = [];
@@ -65,28 +75,59 @@ var Table = React.createClass({
         return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.display}</td> );
       }
     }.bind(this));
-    this.state.data.forEach(function(row,i){
 
-      if (this.state.Ubound !== null || this.state.Lbound !== null){
+    if (this.state.functionality === "highlight"){
+      this.state.data.forEach(function(row,i){
+        if (this.state.Ubound !== null || this.state.Lbound !== null){
+            for (var attr in row){
+              domifiedRow.push( <td>{row[attr]}</td> );
+            }
+            if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
+                TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
+            } else {
+                TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+             }
+          domifiedRow = [];
+        } else {
 
           for (var attr in row){
             domifiedRow.push( <td>{row[attr]}</td> );
           }
-          if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
-              TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
-          } else {
-              TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
-           }
-        domifiedRow = [];
-      } else {
-
-        for (var attr in row){
-          domifiedRow.push( <td>{row[attr]}</td> );
+          TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
+          domifiedRow = [];
         }
-        TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
-        domifiedRow = [];
-      }
-    }.bind(this));
+      }.bind(this));
+    }
+
+    if (this.state.functionality === "subset"){
+      this.state.data.forEach(function(row,i){
+        if (this.state.Ubound !== null || this.state.Lbound !== null){
+          if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
+            for (var attr in row){
+              domifiedRow.push( <td>{row[attr]}</td> );
+            }
+            if (i%2 === 0) {
+              TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+            }
+            if (i%2 === 1){
+              TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+            }
+              domifiedRow = [];
+          }
+        } else {
+            for (var attr in row){
+              domifiedRow.push( <td>{row[attr]}</td> );
+          }
+          if (i%2 === 0) {
+            TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+          }
+          if (i%2 === 1){
+            TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+          }
+            domifiedRow = [];
+        }
+      }.bind(this));
+    }
 
     var children = [ React.createElement("div",{className: "text handle-label"},this.state.Lbound),
                      React.createElement("div",{className: "text handle-label"},this.state.Ubound)
@@ -96,6 +137,12 @@ var Table = React.createClass({
       <div>
         <h1 className="table-header text">{this.props.header}</h1>
         <p className="filter-on text">filter on column: {this.state.displayTitle}</p>
+
+        <div className="buttons">
+          <div onClick={this.useHighlight} className="text button">highlight</div>
+          <div onClick={this.useSubSet} className="text button">subset</div>
+        </div>
+
         <div className="display-box container-fluid">
           <Slider
             children={children}

@@ -1,9 +1,17 @@
 #col-titles {
   background-color: #D2D7D3;
 }
+#even {
+  background-color: grey;
+}
+
 
 #highlight {
   background-color: blue;
+}
+
+#odd {
+  background-color: white;
 }
 
 .bar {
@@ -20,6 +28,19 @@
 
 .bar-2 {
   background-color: grey;
+}
+
+.button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.buttons {
+  margin-bottom: 20px;
 }
 
 .display-box {
