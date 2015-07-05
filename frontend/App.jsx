@@ -2,8 +2,22 @@
 /*global React*/
 
 var React = require('react');
-var Test = require('./Test.jsx');
+var Table = require('./Table.jsx');
+var Data = require('./Data.jsx');
 
-var App = React.render( <Test/>, $('#container')[0]);
+var App = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <Table
+          data={Data.data}
+          titles={Data.titles}
+          header={Data.header}
+        />
+      </div>
+    );
+  }
+});
 
-module.exports = App;
+
+React.render( <App/>, $('#container')[0]);

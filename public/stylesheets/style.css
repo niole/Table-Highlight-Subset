@@ -1,0 +1,54 @@
+#col-titles {
+  background-color: #D2D7D3;
+}
+
+#even {
+  background-color: white;
+}
+
+#odd {
+  background-color: grey;
+}
+
+.bar {
+  height: 100%;
+}
+
+.bar-0 {
+  background-color: grey;
+}
+
+.bar-1 {
+  background-color: black;
+}
+
+.bar-2 {
+  background-color: grey;
+}
+
+.display-box {
+  width:85%;
+}
+
+.handle {
+  background-color: blue;
+  height: 100%;
+  width: 20px;
+}
+
+.slider {
+  height: 15px;
+  margin-bottom: 40px;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.text {
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+.table-row {
+  width: 100%;
+}
