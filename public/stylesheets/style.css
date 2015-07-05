@@ -2,12 +2,8 @@
   background-color: #D2D7D3;
 }
 
-#even {
-  background-color: white;
-}
-
-#odd {
-  background-color: grey;
+#highlight {
+  background-color: blue;
 }
 
 .bar {

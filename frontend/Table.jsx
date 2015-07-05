@@ -27,8 +27,6 @@ var Table = React.createClass({
     });
   },
   getNewTitle: function(newSortTitle){
-    //sort data according to new title, update Lbound and Ubound to be min and max of at column respectively
-    //sort data
     var updateTitle = "";
     if (newSortTitle.display === null){
       updateTitle = newSortTitle.title;
@@ -59,11 +57,9 @@ var Table = React.createClass({
     var sortOnTitle = this.state.sortOnTitle;
     var TableBody = [];
     var domifiedRow = [];
-    //var sliderData = [];
 
     var TableHeaders = this.props.titles.map(function(title){
       if (title.display === null ){
-        //then use title.title as display
         return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.title}</td> );
       } else {
         return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.display}</td> );
@@ -71,35 +67,24 @@ var Table = React.createClass({
     }.bind(this));
     this.state.data.forEach(function(row,i){
 
-      //sliderData.push({id: i, x: row[sortOnTitle]});
-
       if (this.state.Ubound !== null || this.state.Lbound !== null){
-        if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
 
           for (var attr in row){
             domifiedRow.push( <td>{row[attr]}</td> );
           }
-          if (i%2 === 0) {
-            TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
-          }
-          if (i%2 === 1){
-            TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
-          }
-            domifiedRow = [];
-        }
+          if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
+              TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
+          } else {
+              TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+           }
+        domifiedRow = [];
       } else {
 
-          for (var attr in row){
-            domifiedRow.push( <td>{row[attr]}</td> );
+        for (var attr in row){
+          domifiedRow.push( <td>{row[attr]}</td> );
         }
-        if (i%2 === 0) {
-          TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
-        }
-        if (i%2 === 1){
-          TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
-        }
-          domifiedRow = [];
-
+        TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
+        domifiedRow = [];
       }
     }.bind(this));
 
