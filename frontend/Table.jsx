@@ -2,32 +2,37 @@
 /*global React*/
 
 var React = require('react');
-var Slider = require('react-slider');
 
 var Table = React.createClass({
-  propTypes: {
-    header: React.PropTypes.string,
-    data: React.PropTypes.array,
-    titles: React.PropTypes.array
+
+  getDefaultProps: function() {
+    return {
+      functionality: "highlight",
+      subset: [null,null],
+      display: null
+    };
   },
+
+  propTypes: {
+    display: React.PropTypes.string,
+    data: React.PropTypes.array,
+    titles: React.PropTypes.array,
+    getRange: React.PropTypes.func,
+    getColHeader: React.PropTypes.func,
+    subset: React.PropTypes.array,
+    functionality: React.PropTypes.string
+  },
+
   getInitialState: function() {
     return ({
-      functionality: "highlight",
-      sortOnTitle: null,
-      displayTitle: null,
-      range: [null, null],
-      Ubound: null,
-      Lbound: null,
-      data: this.props.data
+      displayTitle: this.props.displayTitle,
+      data: this.props.data,
+      colHeader: null
     });
   },
-  updateBounds: function(bounds){
-    this.setState({
-      Lbound: bounds[0],
-      Ubound: bounds[1]
-    });
-  },
+
   getNewTitle: function(newSortTitle){
+
     var updateTitle = "";
     if (newSortTitle.display === null){
       updateTitle = newSortTitle.title;
@@ -45,26 +50,19 @@ var Table = React.createClass({
             return 1;
         }
     }
+
+    this.props.getColHeader( newSortTitle.title );
+    this.props.getRange( [sortedData[0][newSortTitle.title], sortedData[sortedData.length-1][newSortTitle.title]] );
+
     this.setState({
-      sortOnTitle: newSortTitle.title,
       displayTitle: updateTitle,
-      Ubound: sortedData[sortedData.length-1][newSortTitle.title],
-      Lbound: sortedData[0][newSortTitle.title],
-      range: [sortedData[0][newSortTitle.title],sortedData[sortedData.length-1][newSortTitle.title]],
+      colHeader: newSortTitle.title,
       data: sortedData
     });
-  },
-  useSubSet: function(e){
-    e.preventDefault();
-    this.setState({functionality: "subset"});
 
   },
-  useHighlight: function(e){
-    e.preventDefault();
-    this.setState({functionality: "highlight"});
-  },
+
   render: function() {
-    var sortOnTitle = this.state.sortOnTitle;
     var TableBody = [];
     var domifiedRow = [];
 
@@ -76,16 +74,19 @@ var Table = React.createClass({
       }
     }.bind(this));
 
-    if (this.state.functionality === "highlight"){
+    if (this.props.functionality === "highlight"){
+
       this.state.data.forEach(function(row,i){
-        if (this.state.Ubound !== null || this.state.Lbound !== null){
+
+        if (this.state.colHeader !== null){
             for (var attr in row){
               domifiedRow.push( <td>{row[attr]}</td> );
             }
-            if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
+            if (row[this.state.colHeader] >= this.props.subset[0] &&
+                 row[this.state.colHeader] <= this.props.subset[1]) {
                 TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
             } else {
-                TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+                TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
              }
           domifiedRow = [];
         } else {
@@ -99,10 +100,11 @@ var Table = React.createClass({
       }.bind(this));
     }
 
-    if (this.state.functionality === "subset"){
+    if (this.props.functionality === "subset"){
       this.state.data.forEach(function(row,i){
-        if (this.state.Ubound !== null || this.state.Lbound !== null){
-          if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
+        if (this.state.colHeader !== null){
+          if (row[this.state.colHeader] >= this.props.subset[0] &&
+              row[this.state.colHeader] <= this.props.subset[1]) {
             for (var attr in row){
               domifiedRow.push( <td>{row[attr]}</td> );
             }
@@ -128,30 +130,16 @@ var Table = React.createClass({
         }
       }.bind(this));
     }
-
-    var children = [ React.createElement("div",{className: "text handle-label"},this.state.Lbound),
-                     React.createElement("div",{className: "text handle-label"},this.state.Ubound)
-                    ];
+    var display = "none";
+    if (this.props.display !== null){
+      display = "block";
+    }
 
     return(
       <div>
-        <h1 className="table-header text">{this.props.header}</h1>
-        <p className="filter-on text">filter on column: {this.state.displayTitle}</p>
-
-        <div className="buttons">
-          <div onClick={this.useHighlight} className="text button">highlight</div>
-          <div onClick={this.useSubSet} className="text button">subset</div>
-        </div>
+        <p style={{display: display}} className="filter-on text">filter on column: {this.state.displayTitle}</p>
 
         <div className="display-box container-fluid">
-          <Slider
-            children={children}
-            onAfterChange={this.updateBounds}
-            value={[this.state.Lbound,this.state.Ubound]}
-            min={this.state.range[0]}
-            max={this.state.range[1]}
-            withBars
-          />
           <table className="table-row">
             <th>
               <tr id="col-titles" className="text table-row">{TableHeaders}</tr>
@@ -161,6 +149,7 @@ var Table = React.createClass({
             </tbody>
           </table>
         </div>
+
       </div>
     );
   }
