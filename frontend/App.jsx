@@ -2,14 +2,14 @@
 /*global React*/
 
 var React = require('react');
-var Table = require('./Table.jsx');
+var DashBoard = require('./DashBoard.jsx');
 var Data = require('./Data.jsx');
 
 var App = React.createClass({
   render: function() {
     return (
       <div>
-        <Table
+        <DashBoard
           data={Data.data}
           titles={Data.titles}
           header={Data.header}

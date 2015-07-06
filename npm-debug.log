@@ -1,27 +1,1911 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.37
 4 verbose node symlink /usr/bin/node
-5 verbose run-script [ 'prestart', 'start', 'poststart' ]
-6 info prestart RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
-7 info start RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
-8 verbose unsafe-perm in lifecycle true
-9 info RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0 Failed to exec start script
-10 error RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0 start: `node ./bin/www`
-10 error Exit status 8
-11 error Failed at the RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0 start script.
-11 error This is most likely a problem with the RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial package,
-11 error not with npm itself.
-11 error Tell the author that this fails on your system:
-11 error     node ./bin/www
-11 error You can get their info via:
-11 error     npm owner ls RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial
-11 error There is likely additional logging output above.
-12 error System Linux 3.13.0-32-generic
-13 error command "/usr/bin/node" "/usr/bin/npm" "start"
-14 error cwd /home/niole/code/javascript/Express-React-Browserify-Gulp-Jade-BP
-15 error node -v v0.10.37
-16 error npm -v 1.4.28
-17 error code ELIFECYCLE
-18 verbose exit [ 1, true ]
+5 warn package.json RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0 No repository field.
+6 verbose readDependencies using package.json deps
+7 verbose install where, deps [ '/home/niole/code/javascript/Table-Highlight-Subset',
+7 verbose install   [ 'body-parser',
+7 verbose install     'chartist',
+7 verbose install     'cookie-parser',
+7 verbose install     'd3',
+7 verbose install     'debug',
+7 verbose install     'dotenv',
+7 verbose install     'express',
+7 verbose install     'jade',
+7 verbose install     'materialize-css',
+7 verbose install     'mongodb',
+7 verbose install     'mongoskin',
+7 verbose install     'morgan',
+7 verbose install     'react',
+7 verbose install     'react-chartist',
+7 verbose install     'react-slider',
+7 verbose install     'serve-favicon',
+7 verbose install     'showdown',
+7 verbose install     'browserify',
+7 verbose install     'gulp',
+7 verbose install     'gulp-concat',
+7 verbose install     'gulp-html-replace',
+7 verbose install     'gulp-inject',
+7 verbose install     'gulp-react',
+7 verbose install     'gulp-streamify',
+7 verbose install     'gulp-uglify',
+7 verbose install     'reactify',
+7 verbose install     'vinyl-buffer',
+7 verbose install     'vinyl-source-stream',
+7 verbose install     'watchify' ] ]
+8 info preinstall RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+9 verbose readDependencies using package.json deps
+10 verbose already installed skipping body-parser@^1.12.3 /home/niole/code/javascript/Table-Highlight-Subset
+11 verbose already installed skipping chartist@^0.9.1 /home/niole/code/javascript/Table-Highlight-Subset
+12 verbose already installed skipping cookie-parser@^1.3.4 /home/niole/code/javascript/Table-Highlight-Subset
+13 verbose already installed skipping d3@^3.5.6 /home/niole/code/javascript/Table-Highlight-Subset
+14 verbose already installed skipping debug@^2.1.3 /home/niole/code/javascript/Table-Highlight-Subset
+15 verbose already installed skipping dotenv@^1.1.0 /home/niole/code/javascript/Table-Highlight-Subset
+16 verbose already installed skipping express@^4.12.3 /home/niole/code/javascript/Table-Highlight-Subset
+17 verbose already installed skipping jade@^1.9.2 /home/niole/code/javascript/Table-Highlight-Subset
+18 verbose already installed skipping materialize-css@^0.96.1 /home/niole/code/javascript/Table-Highlight-Subset
+19 verbose already installed skipping mongodb@^1.4.35 /home/niole/code/javascript/Table-Highlight-Subset
+20 verbose already installed skipping mongoskin@^1.4.13 /home/niole/code/javascript/Table-Highlight-Subset
+21 verbose already installed skipping morgan@^1.5.2 /home/niole/code/javascript/Table-Highlight-Subset
+22 verbose cache add [ 'react@^0.12.0', null ]
+23 verbose cache add name=undefined spec="react@^0.12.0" args=["react@^0.12.0",null]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'react@^0.12.0',
+24 verbose parsed url   path: 'react@^0.12.0',
+24 verbose parsed url   href: 'react@^0.12.0' }
+25 verbose already installed skipping react-chartist@^0.7.0 /home/niole/code/javascript/Table-Highlight-Subset
+26 verbose already installed skipping react-slider@^0.5.1 /home/niole/code/javascript/Table-Highlight-Subset
+27 verbose already installed skipping serve-favicon@^2.2.0 /home/niole/code/javascript/Table-Highlight-Subset
+28 verbose already installed skipping showdown@^0.5.0 /home/niole/code/javascript/Table-Highlight-Subset
+29 verbose already installed skipping browserify@^9.0.8 /home/niole/code/javascript/Table-Highlight-Subset
+30 verbose cache add name="react" spec="^0.12.0" args=["react","^0.12.0"]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: '^0.12.0',
+31 verbose parsed url   path: '^0.12.0',
+31 verbose parsed url   href: '^0.12.0' }
+32 verbose addNamed [ 'react', '^0.12.0' ]
+33 verbose addNamed [ null, '>=0.12.0-0 <0.13.0-0' ]
+34 verbose already installed skipping gulp@^3.8.11 /home/niole/code/javascript/Table-Highlight-Subset
+35 verbose already installed skipping gulp-concat@^2.5.2 /home/niole/code/javascript/Table-Highlight-Subset
+36 verbose already installed skipping gulp-html-replace@^1.4.5 /home/niole/code/javascript/Table-Highlight-Subset
+37 silly lockFile fef31294-react-0-12-0 react@^0.12.0
+38 verbose lock react@^0.12.0 /home/niole/.npm/fef31294-react-0-12-0.lock
+39 verbose already installed skipping gulp-inject@^1.2.0 /home/niole/code/javascript/Table-Highlight-Subset
+40 verbose already installed skipping gulp-react@^3.0.1 /home/niole/code/javascript/Table-Highlight-Subset
+41 verbose already installed skipping gulp-streamify@0.0.5 /home/niole/code/javascript/Table-Highlight-Subset
+42 verbose already installed skipping gulp-uglify@^1.2.0 /home/niole/code/javascript/Table-Highlight-Subset
+43 silly addNameRange { name: 'react', range: '>=0.12.0-0 <0.13.0-0', hasData: false }
+44 verbose already installed skipping reactify@^1.1.0 /home/niole/code/javascript/Table-Highlight-Subset
+45 verbose already installed skipping vinyl-buffer@^1.0.0 /home/niole/code/javascript/Table-Highlight-Subset
+46 verbose already installed skipping vinyl-source-stream@^1.1.0 /home/niole/code/javascript/Table-Highlight-Subset
+47 verbose already installed skipping watchify@^3.2.0 /home/niole/code/javascript/Table-Highlight-Subset
+48 verbose request where is /react
+49 verbose request registry https://registry.npmjs.org/
+50 verbose request id e45a2843a8cd0470
+51 verbose url raw /react
+52 verbose url resolving [ 'https://registry.npmjs.org/', './react' ]
+53 verbose url resolved https://registry.npmjs.org/react
+54 verbose request where is https://registry.npmjs.org/react
+55 info trying registry request attempt 1 at 22:14:16
+56 verbose etag "7SH5O8RW3OPW3OULQR5STU5RS"
+57 http GET https://registry.npmjs.org/react
+58 http 304 https://registry.npmjs.org/react
+59 silly registry.get cb [ 304,
+59 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:16 GMT',
+59 silly registry.get     via: '1.1 varnish',
+59 silly registry.get     'cache-control': 'max-age=60',
+59 silly registry.get     etag: '"7SH5O8RW3OPW3OULQR5STU5RS"',
+59 silly registry.get     age: '57',
+59 silly registry.get     connection: 'keep-alive',
+59 silly registry.get     'x-served-by': 'cache-atl6230-ATL',
+59 silly registry.get     'x-cache': 'HIT',
+59 silly registry.get     'x-cache-hits': '1',
+59 silly registry.get     'x-timer': 'S1436148856.258786,VS0,VE1',
+59 silly registry.get     vary: 'Accept' } ]
+60 verbose etag https://registry.npmjs.org/react from cache
+61 silly addNameRange number 2 { name: 'react', range: '>=0.12.0-0 <0.13.0-0', hasData: true }
+62 silly addNameRange versions [ 'react',
+62 silly addNameRange   [ '0.0.1',
+62 silly addNameRange     '0.0.2',
+62 silly addNameRange     '0.0.3',
+62 silly addNameRange     '0.1.2',
+62 silly addNameRange     '0.2.0',
+62 silly addNameRange     '0.2.1',
+62 silly addNameRange     '0.2.2',
+62 silly addNameRange     '0.2.3',
+62 silly addNameRange     '0.2.4',
+62 silly addNameRange     '0.2.5',
+62 silly addNameRange     '0.2.6',
+62 silly addNameRange     '0.3.0',
+62 silly addNameRange     '0.3.4',
+62 silly addNameRange     '0.3.5',
+62 silly addNameRange     '0.5.0',
+62 silly addNameRange     '0.5.1',
+62 silly addNameRange     '0.5.2',
+62 silly addNameRange     '0.6.0',
+62 silly addNameRange     '0.6.1',
+62 silly addNameRange     '0.6.2',
+62 silly addNameRange     '0.6.3',
+62 silly addNameRange     '0.7.0',
+62 silly addNameRange     '0.7.1',
+62 silly addNameRange     '0.8.0',
+62 silly addNameRange     '0.9.0-rc1',
+62 silly addNameRange     '0.9.0',
+62 silly addNameRange     '0.10.0-rc1',
+62 silly addNameRange     '0.10.0',
+62 silly addNameRange     '0.11.0-rc1',
+62 silly addNameRange     '0.11.0',
+62 silly addNameRange     '0.11.1',
+62 silly addNameRange     '0.11.2',
+62 silly addNameRange     '0.12.0-rc1',
+62 silly addNameRange     '0.12.0',
+62 silly addNameRange     '0.12.1',
+62 silly addNameRange     '0.12.2',
+62 silly addNameRange     '0.13.0-alpha.1',
+62 silly addNameRange     '0.13.0-alpha.2',
+62 silly addNameRange     '0.13.0-beta.1',
+62 silly addNameRange     '0.13.0-beta.2',
+62 silly addNameRange     '0.13.0-rc1',
+62 silly addNameRange     '0.13.0-rc2',
+62 silly addNameRange     '0.13.0',
+62 silly addNameRange     '0.13.1',
+62 silly addNameRange     '0.13.2',
+62 silly addNameRange     '0.13.3',
+62 silly addNameRange     '0.14.0-alpha1',
+62 silly addNameRange     '0.14.0-alpha2',
+62 silly addNameRange     '0.14.0-alpha3',
+62 silly addNameRange     '0.14.0-beta1' ] ]
+63 verbose addNamed [ 'react', '0.12.2' ]
+64 verbose addNamed [ '0.12.2', '0.12.2' ]
+65 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
+66 verbose lock react@0.12.2 /home/niole/.npm/1f2cec02-react-0-12-2.lock
+67 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
+68 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
+69 silly lockFile fef31294-react-0-12-0 react@^0.12.0
+70 silly lockFile fef31294-react-0-12-0 react@^0.12.0
+71 silly resolved [ { name: 'react',
+71 silly resolved     description: 'React is a JavaScript library for building user interfaces.',
+71 silly resolved     version: '0.12.2',
+71 silly resolved     keywords: [ 'react' ],
+71 silly resolved     homepage: 'https://github.com/facebook/react/tree/master/npm-react',
+71 silly resolved     bugs: { url: 'https://github.com/facebook/react/issues?labels=react-core' },
+71 silly resolved     license: 'BSD-3-Clause',
+71 silly resolved     files: [ 'README.md', 'addons.js', 'react.js', 'dist/', 'lib/' ],
+71 silly resolved     main: 'react.js',
+71 silly resolved     repository: { type: 'git', url: 'https://github.com/facebook/react' },
+71 silly resolved     engines: { node: '>=0.10.0' },
+71 silly resolved     dependencies: { envify: '^3.0.0' },
+71 silly resolved     browserify: { transform: [Object] },
+71 silly resolved     _id: 'react@0.12.2',
+71 silly resolved     _shasum: '1c4f0b08818146eeab4f0ab39257e0aa52027e00',
+71 silly resolved     _resolved: 'https://registry.npmjs.org/react/-/react-0.12.2.tgz',
+71 silly resolved     _from: 'react@^0.12.0',
+71 silly resolved     scripts: {},
+71 silly resolved     _npmVersion: '2.1.11',
+71 silly resolved     _nodeVersion: '0.10.32',
+71 silly resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
+71 silly resolved     maintainers: [ [Object], [Object] ],
+71 silly resolved     dist:
+71 silly resolved      { shasum: '1c4f0b08818146eeab4f0ab39257e0aa52027e00',
+71 silly resolved        tarball: 'http://registry.npmjs.org/react/-/react-0.12.2.tgz' },
+71 silly resolved     directories: {},
+71 silly resolved     readme: 'ERROR: No README data found!' } ]
+72 info install react@0.12.2 into /home/niole/code/javascript/Table-Highlight-Subset
+73 info installOne react@0.12.2
+74 verbose node_modules/react unbuild
+75 info preuninstall react@0.13.2
+76 info uninstall react@0.13.2
+77 verbose true,/home/niole/code/javascript/Table-Highlight-Subset/node_modules,/home/niole/code/javascript/Table-Highlight-Subset/node_modules unbuild react@0.13.2
+78 info postuninstall react@0.13.2
+79 verbose tar unpack /home/niole/.npm/react/0.12.2/package.tgz
+80 silly lockFile d29a3f78-hlight-Subset-node-modules-react tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+81 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react /home/niole/.npm/d29a3f78-hlight-Subset-node-modules-react.lock
+82 silly lockFile 538a9cd6-ole-npm-react-0-12-2-package-tgz tar:///home/niole/.npm/react/0.12.2/package.tgz
+83 verbose lock tar:///home/niole/.npm/react/0.12.2/package.tgz /home/niole/.npm/538a9cd6-ole-npm-react-0-12-2-package-tgz.lock
+84 silly gunzTarPerm modes [ '775', '664' ]
+85 silly gunzTarPerm extractEntry package.json
+86 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+89 silly gunzTarPerm extractEntry addons.js
+90 silly gunzTarPerm modified mode [ 'addons.js', 420, 436 ]
+91 silly gunzTarPerm extractEntry react.js
+92 silly gunzTarPerm modified mode [ 'react.js', 420, 436 ]
+93 silly gunzTarPerm extractEntry dist/JSXTransformer.js
+94 silly gunzTarPerm modified mode [ 'dist/JSXTransformer.js', 420, 436 ]
+95 silly gunzTarPerm extractEntry dist/react-with-addons.js
+96 silly gunzTarPerm modified mode [ 'dist/react-with-addons.js', 420, 436 ]
+97 silly gunzTarPerm extractEntry dist/react-with-addons.min.js
+98 silly gunzTarPerm modified mode [ 'dist/react-with-addons.min.js', 420, 436 ]
+99 silly gunzTarPerm extractEntry dist/react.js
+100 silly gunzTarPerm modified mode [ 'dist/react.js', 420, 436 ]
+101 silly gunzTarPerm extractEntry dist/react.min.js
+102 silly gunzTarPerm modified mode [ 'dist/react.min.js', 420, 436 ]
+103 silly gunzTarPerm extractEntry lib/AutoFocusMixin.js
+104 silly gunzTarPerm modified mode [ 'lib/AutoFocusMixin.js', 420, 436 ]
+105 silly gunzTarPerm extractEntry lib/ReactPutListenerQueue.js
+106 silly gunzTarPerm modified mode [ 'lib/ReactPutListenerQueue.js', 420, 436 ]
+107 silly gunzTarPerm extractEntry lib/ReactReconcileTransaction.js
+108 silly gunzTarPerm modified mode [ 'lib/ReactReconcileTransaction.js', 420, 436 ]
+109 silly gunzTarPerm extractEntry lib/ReactRootIndex.js
+110 silly gunzTarPerm modified mode [ 'lib/ReactRootIndex.js', 420, 436 ]
+111 silly gunzTarPerm extractEntry lib/ReactPropTypes.js
+112 silly gunzTarPerm modified mode [ 'lib/ReactPropTypes.js', 420, 436 ]
+113 silly gunzTarPerm extractEntry lib/ReactServerRenderingTransaction.js
+114 silly gunzTarPerm modified mode [ 'lib/ReactServerRenderingTransaction.js', 420, 436 ]
+115 silly gunzTarPerm extractEntry lib/ReactStateSetters.js
+116 silly gunzTarPerm modified mode [ 'lib/ReactStateSetters.js', 420, 436 ]
+117 silly gunzTarPerm extractEntry lib/ReactTestUtils.js
+118 silly gunzTarPerm modified mode [ 'lib/ReactTestUtils.js', 420, 436 ]
+119 silly gunzTarPerm extractEntry lib/ReactTextComponent.js
+120 silly gunzTarPerm modified mode [ 'lib/ReactTextComponent.js', 420, 436 ]
+121 silly gunzTarPerm extractEntry lib/ReactTransitionChildMapping.js
+122 silly gunzTarPerm modified mode [ 'lib/ReactTransitionChildMapping.js', 420, 436 ]
+123 silly gunzTarPerm extractEntry lib/ReactPropTypeLocations.js
+124 silly gunzTarPerm modified mode [ 'lib/ReactPropTypeLocations.js', 420, 436 ]
+125 silly gunzTarPerm extractEntry lib/ReactTransitionEvents.js
+126 silly gunzTarPerm modified mode [ 'lib/ReactTransitionEvents.js', 420, 436 ]
+127 silly gunzTarPerm extractEntry lib/ReactPropTypeLocationNames.js
+128 silly gunzTarPerm modified mode [ 'lib/ReactPropTypeLocationNames.js', 420, 436 ]
+129 silly gunzTarPerm extractEntry lib/ReactTransitionGroup.js
+130 silly gunzTarPerm modified mode [ 'lib/ReactTransitionGroup.js', 420, 436 ]
+131 silly gunzTarPerm extractEntry lib/ReactPropTransferer.js
+132 silly gunzTarPerm modified mode [ 'lib/ReactPropTransferer.js', 420, 436 ]
+133 silly gunzTarPerm extractEntry lib/ReactUpdates.js
+134 silly gunzTarPerm modified mode [ 'lib/ReactUpdates.js', 420, 436 ]
+135 silly gunzTarPerm extractEntry lib/ReactPerf.js
+136 silly gunzTarPerm modified mode [ 'lib/ReactPerf.js', 420, 436 ]
+137 silly gunzTarPerm extractEntry lib/ReactWithAddons.js
+138 silly gunzTarPerm modified mode [ 'lib/ReactWithAddons.js', 420, 436 ]
+139 silly gunzTarPerm extractEntry lib/ReactOwner.js
+140 silly gunzTarPerm modified mode [ 'lib/ReactOwner.js', 420, 436 ]
+141 silly gunzTarPerm extractEntry lib/SVGDOMPropertyConfig.js
+142 silly gunzTarPerm modified mode [ 'lib/SVGDOMPropertyConfig.js', 420, 436 ]
+143 silly gunzTarPerm extractEntry lib/ReactNativeComponent.js
+144 silly gunzTarPerm modified mode [ 'lib/ReactNativeComponent.js', 420, 436 ]
+145 silly gunzTarPerm extractEntry lib/SelectEventPlugin.js
+146 silly gunzTarPerm modified mode [ 'lib/SelectEventPlugin.js', 420, 436 ]
+147 silly gunzTarPerm extractEntry lib/ReactMultiChildUpdateTypes.js
+148 silly gunzTarPerm modified mode [ 'lib/ReactMultiChildUpdateTypes.js', 420, 436 ]
+149 silly gunzTarPerm extractEntry lib/ServerReactRootIndex.js
+150 silly gunzTarPerm modified mode [ 'lib/ServerReactRootIndex.js', 420, 436 ]
+151 silly gunzTarPerm extractEntry lib/ReactMultiChild.js
+152 silly gunzTarPerm modified mode [ 'lib/ReactMultiChild.js', 420, 436 ]
+153 silly gunzTarPerm extractEntry lib/SimpleEventPlugin.js
+154 silly gunzTarPerm modified mode [ 'lib/SimpleEventPlugin.js', 420, 436 ]
+155 silly gunzTarPerm extractEntry lib/ReactMount.js
+156 silly gunzTarPerm modified mode [ 'lib/ReactMount.js', 420, 436 ]
+157 silly gunzTarPerm extractEntry lib/SyntheticClipboardEvent.js
+158 silly gunzTarPerm modified mode [ 'lib/SyntheticClipboardEvent.js', 420, 436 ]
+159 silly gunzTarPerm extractEntry lib/ReactMarkupChecksum.js
+160 silly gunzTarPerm modified mode [ 'lib/ReactMarkupChecksum.js', 420, 436 ]
+161 silly gunzTarPerm extractEntry lib/SyntheticCompositionEvent.js
+162 silly gunzTarPerm modified mode [ 'lib/SyntheticCompositionEvent.js', 420, 436 ]
+163 silly gunzTarPerm extractEntry lib/ReactLink.js
+164 silly gunzTarPerm modified mode [ 'lib/ReactLink.js', 420, 436 ]
+165 silly gunzTarPerm extractEntry lib/SyntheticDragEvent.js
+166 silly gunzTarPerm modified mode [ 'lib/SyntheticDragEvent.js', 420, 436 ]
+167 silly gunzTarPerm extractEntry lib/ReactLegacyElement.js
+168 silly gunzTarPerm modified mode [ 'lib/ReactLegacyElement.js', 420, 436 ]
+169 silly gunzTarPerm extractEntry lib/SyntheticEvent.js
+170 silly gunzTarPerm modified mode [ 'lib/SyntheticEvent.js', 420, 436 ]
+171 silly gunzTarPerm extractEntry lib/ReactInstanceHandles.js
+172 silly gunzTarPerm modified mode [ 'lib/ReactInstanceHandles.js', 420, 436 ]
+173 silly gunzTarPerm extractEntry lib/SyntheticFocusEvent.js
+174 silly gunzTarPerm modified mode [ 'lib/SyntheticFocusEvent.js', 420, 436 ]
+175 silly gunzTarPerm extractEntry lib/ReactInputSelection.js
+176 silly gunzTarPerm modified mode [ 'lib/ReactInputSelection.js', 420, 436 ]
+177 silly gunzTarPerm extractEntry lib/SyntheticInputEvent.js
+178 silly gunzTarPerm modified mode [ 'lib/SyntheticInputEvent.js', 420, 436 ]
+179 silly gunzTarPerm extractEntry lib/ReactInjection.js
+180 silly gunzTarPerm modified mode [ 'lib/ReactInjection.js', 420, 436 ]
+181 silly gunzTarPerm extractEntry lib/SyntheticKeyboardEvent.js
+182 silly gunzTarPerm modified mode [ 'lib/SyntheticKeyboardEvent.js', 420, 436 ]
+183 silly gunzTarPerm extractEntry lib/ReactEventListener.js
+184 silly gunzTarPerm modified mode [ 'lib/ReactEventListener.js', 420, 436 ]
+185 silly gunzTarPerm extractEntry lib/SyntheticMouseEvent.js
+186 silly gunzTarPerm modified mode [ 'lib/SyntheticMouseEvent.js', 420, 436 ]
+187 silly gunzTarPerm extractEntry lib/ReactEventEmitterMixin.js
+188 silly gunzTarPerm modified mode [ 'lib/ReactEventEmitterMixin.js', 420, 436 ]
+189 silly gunzTarPerm extractEntry lib/SyntheticTouchEvent.js
+190 silly gunzTarPerm modified mode [ 'lib/SyntheticTouchEvent.js', 420, 436 ]
+191 silly gunzTarPerm extractEntry lib/ReactErrorUtils.js
+192 silly gunzTarPerm modified mode [ 'lib/ReactErrorUtils.js', 420, 436 ]
+193 silly gunzTarPerm extractEntry lib/SyntheticUIEvent.js
+194 silly gunzTarPerm modified mode [ 'lib/SyntheticUIEvent.js', 420, 436 ]
+195 silly gunzTarPerm extractEntry lib/ReactEmptyComponent.js
+196 silly gunzTarPerm modified mode [ 'lib/ReactEmptyComponent.js', 420, 436 ]
+197 silly gunzTarPerm extractEntry lib/SyntheticWheelEvent.js
+198 silly gunzTarPerm modified mode [ 'lib/SyntheticWheelEvent.js', 420, 436 ]
+199 silly gunzTarPerm extractEntry lib/ReactElementValidator.js
+200 silly gunzTarPerm modified mode [ 'lib/ReactElementValidator.js', 420, 436 ]
+201 silly gunzTarPerm extractEntry lib/Transaction.js
+202 silly gunzTarPerm modified mode [ 'lib/Transaction.js', 420, 436 ]
+203 silly gunzTarPerm extractEntry lib/ReactElement.js
+204 silly gunzTarPerm modified mode [ 'lib/ReactElement.js', 420, 436 ]
+205 silly gunzTarPerm extractEntry lib/ViewportMetrics.js
+206 silly gunzTarPerm modified mode [ 'lib/ViewportMetrics.js', 420, 436 ]
+207 silly gunzTarPerm extractEntry lib/ReactDefaultPerfAnalysis.js
+208 silly gunzTarPerm modified mode [ 'lib/ReactDefaultPerfAnalysis.js', 420, 436 ]
+209 silly gunzTarPerm extractEntry lib/accumulateInto.js
+210 silly gunzTarPerm modified mode [ 'lib/accumulateInto.js', 420, 436 ]
+211 silly gunzTarPerm extractEntry lib/ReactDefaultPerf.js
+212 silly gunzTarPerm modified mode [ 'lib/ReactDefaultPerf.js', 420, 436 ]
+213 silly gunzTarPerm extractEntry lib/adler32.js
+214 silly gunzTarPerm modified mode [ 'lib/adler32.js', 420, 436 ]
+215 silly gunzTarPerm extractEntry lib/ReactDefaultInjection.js
+216 silly gunzTarPerm modified mode [ 'lib/ReactDefaultInjection.js', 420, 436 ]
+217 silly gunzTarPerm extractEntry lib/camelize.js
+218 silly gunzTarPerm modified mode [ 'lib/camelize.js', 420, 436 ]
+219 silly gunzTarPerm extractEntry lib/ReactDefaultBatchingStrategy.js
+220 silly gunzTarPerm modified mode [ 'lib/ReactDefaultBatchingStrategy.js', 420, 436 ]
+221 silly gunzTarPerm extractEntry lib/camelizeStyleName.js
+222 silly gunzTarPerm modified mode [ 'lib/camelizeStyleName.js', 420, 436 ]
+223 silly gunzTarPerm extractEntry lib/ReactDOMTextarea.js
+224 silly gunzTarPerm modified mode [ 'lib/ReactDOMTextarea.js', 420, 436 ]
+225 silly gunzTarPerm extractEntry lib/cloneWithProps.js
+226 silly gunzTarPerm modified mode [ 'lib/cloneWithProps.js', 420, 436 ]
+227 silly gunzTarPerm extractEntry lib/ReactDOMSelection.js
+228 silly gunzTarPerm modified mode [ 'lib/ReactDOMSelection.js', 420, 436 ]
+229 silly gunzTarPerm extractEntry lib/containsNode.js
+230 silly gunzTarPerm modified mode [ 'lib/containsNode.js', 420, 436 ]
+231 silly gunzTarPerm extractEntry lib/ReactDOMSelect.js
+232 silly gunzTarPerm modified mode [ 'lib/ReactDOMSelect.js', 420, 436 ]
+233 silly gunzTarPerm extractEntry lib/copyProperties.js
+234 silly gunzTarPerm modified mode [ 'lib/copyProperties.js', 420, 436 ]
+235 silly gunzTarPerm extractEntry lib/ReactDOMOption.js
+236 silly gunzTarPerm modified mode [ 'lib/ReactDOMOption.js', 420, 436 ]
+237 silly gunzTarPerm extractEntry lib/createArrayFrom.js
+238 silly gunzTarPerm modified mode [ 'lib/createArrayFrom.js', 420, 436 ]
+239 silly gunzTarPerm extractEntry lib/ReactDOMInput.js
+240 silly gunzTarPerm modified mode [ 'lib/ReactDOMInput.js', 420, 436 ]
+241 silly gunzTarPerm extractEntry lib/createFullPageComponent.js
+242 silly gunzTarPerm modified mode [ 'lib/createFullPageComponent.js', 420, 436 ]
+243 silly gunzTarPerm extractEntry lib/ReactDOMImg.js
+244 silly gunzTarPerm modified mode [ 'lib/ReactDOMImg.js', 420, 436 ]
+245 silly gunzTarPerm extractEntry lib/createNodesFromMarkup.js
+246 silly gunzTarPerm modified mode [ 'lib/createNodesFromMarkup.js', 420, 436 ]
+247 silly gunzTarPerm extractEntry lib/ReactDOMIDOperations.js
+248 silly gunzTarPerm modified mode [ 'lib/ReactDOMIDOperations.js', 420, 436 ]
+249 silly gunzTarPerm extractEntry lib/cx.js
+250 silly gunzTarPerm modified mode [ 'lib/cx.js', 420, 436 ]
+251 silly gunzTarPerm extractEntry lib/ReactDOMForm.js
+252 silly gunzTarPerm modified mode [ 'lib/ReactDOMForm.js', 420, 436 ]
+253 silly gunzTarPerm extractEntry lib/dangerousStyleValue.js
+254 silly gunzTarPerm modified mode [ 'lib/dangerousStyleValue.js', 420, 436 ]
+255 silly gunzTarPerm extractEntry lib/ReactDOMComponent.js
+256 silly gunzTarPerm modified mode [ 'lib/ReactDOMComponent.js', 420, 436 ]
+257 silly gunzTarPerm extractEntry lib/deprecated.js
+258 silly gunzTarPerm modified mode [ 'lib/deprecated.js', 420, 436 ]
+259 silly gunzTarPerm extractEntry lib/ReactDOMButton.js
+260 silly gunzTarPerm modified mode [ 'lib/ReactDOMButton.js', 420, 436 ]
+261 silly gunzTarPerm extractEntry lib/emptyFunction.js
+262 silly gunzTarPerm modified mode [ 'lib/emptyFunction.js', 420, 436 ]
+263 silly gunzTarPerm extractEntry lib/ReactDOM.js
+264 silly gunzTarPerm modified mode [ 'lib/ReactDOM.js', 420, 436 ]
+265 silly gunzTarPerm extractEntry lib/emptyObject.js
+266 silly gunzTarPerm modified mode [ 'lib/emptyObject.js', 420, 436 ]
+267 silly gunzTarPerm extractEntry lib/ReactCurrentOwner.js
+268 silly gunzTarPerm modified mode [ 'lib/ReactCurrentOwner.js', 420, 436 ]
+269 silly gunzTarPerm extractEntry lib/escapeTextForBrowser.js
+270 silly gunzTarPerm modified mode [ 'lib/escapeTextForBrowser.js', 420, 436 ]
+271 silly gunzTarPerm extractEntry lib/ReactContext.js
+272 silly gunzTarPerm modified mode [ 'lib/ReactContext.js', 420, 436 ]
+273 silly gunzTarPerm extractEntry lib/flattenChildren.js
+274 silly gunzTarPerm modified mode [ 'lib/flattenChildren.js', 420, 436 ]
+275 silly gunzTarPerm extractEntry lib/ReactCompositeComponent.js
+276 silly gunzTarPerm modified mode [ 'lib/ReactCompositeComponent.js', 420, 436 ]
+277 silly gunzTarPerm extractEntry lib/focusNode.js
+278 silly gunzTarPerm modified mode [ 'lib/focusNode.js', 420, 436 ]
+279 silly gunzTarPerm extractEntry lib/ReactComponentWithPureRenderMixin.js
+280 silly gunzTarPerm modified mode [ 'lib/ReactComponentWithPureRenderMixin.js', 420, 436 ]
+281 silly gunzTarPerm extractEntry lib/forEachAccumulated.js
+282 silly gunzTarPerm modified mode [ 'lib/forEachAccumulated.js', 420, 436 ]
+283 silly gunzTarPerm extractEntry lib/ReactComponentBrowserEnvironment.js
+284 silly gunzTarPerm modified mode [ 'lib/ReactComponentBrowserEnvironment.js', 420, 436 ]
+285 silly gunzTarPerm extractEntry lib/getActiveElement.js
+286 silly gunzTarPerm modified mode [ 'lib/getActiveElement.js', 420, 436 ]
+287 silly gunzTarPerm extractEntry lib/ReactComponent.js
+288 silly gunzTarPerm modified mode [ 'lib/ReactComponent.js', 420, 436 ]
+289 silly gunzTarPerm extractEntry lib/getEventCharCode.js
+290 silly gunzTarPerm modified mode [ 'lib/getEventCharCode.js', 420, 436 ]
+291 silly gunzTarPerm extractEntry lib/ReactChildren.js
+292 silly gunzTarPerm modified mode [ 'lib/ReactChildren.js', 420, 436 ]
+293 silly gunzTarPerm extractEntry lib/getEventKey.js
+294 silly gunzTarPerm modified mode [ 'lib/getEventKey.js', 420, 436 ]
+295 silly gunzTarPerm extractEntry lib/ReactCSSTransitionGroupChild.js
+296 silly gunzTarPerm modified mode [ 'lib/ReactCSSTransitionGroupChild.js', 420, 436 ]
+297 silly gunzTarPerm extractEntry lib/getEventModifierState.js
+298 silly gunzTarPerm modified mode [ 'lib/getEventModifierState.js', 420, 436 ]
+299 silly gunzTarPerm extractEntry lib/ReactCSSTransitionGroup.js
+300 silly gunzTarPerm modified mode [ 'lib/ReactCSSTransitionGroup.js', 420, 436 ]
+301 silly gunzTarPerm extractEntry lib/getEventTarget.js
+302 silly gunzTarPerm modified mode [ 'lib/getEventTarget.js', 420, 436 ]
+303 silly gunzTarPerm extractEntry lib/ReactBrowserEventEmitter.js
+304 silly gunzTarPerm modified mode [ 'lib/ReactBrowserEventEmitter.js', 420, 436 ]
+305 silly gunzTarPerm extractEntry lib/getMarkupWrap.js
+306 silly gunzTarPerm modified mode [ 'lib/getMarkupWrap.js', 420, 436 ]
+307 silly gunzTarPerm extractEntry lib/ReactBrowserComponentMixin.js
+308 silly gunzTarPerm modified mode [ 'lib/ReactBrowserComponentMixin.js', 420, 436 ]
+309 silly gunzTarPerm extractEntry lib/getNodeForCharacterOffset.js
+310 silly gunzTarPerm modified mode [ 'lib/getNodeForCharacterOffset.js', 420, 436 ]
+311 silly gunzTarPerm extractEntry lib/React.js
+312 silly gunzTarPerm modified mode [ 'lib/React.js', 420, 436 ]
+313 silly gunzTarPerm extractEntry lib/getReactRootElementInContainer.js
+314 silly gunzTarPerm modified mode [ 'lib/getReactRootElementInContainer.js', 420, 436 ]
+315 silly gunzTarPerm extractEntry lib/PooledClass.js
+316 silly gunzTarPerm modified mode [ 'lib/PooledClass.js', 420, 436 ]
+317 silly gunzTarPerm extractEntry lib/getTextContentAccessor.js
+318 silly gunzTarPerm modified mode [ 'lib/getTextContentAccessor.js', 420, 436 ]
+319 silly gunzTarPerm extractEntry lib/Object.assign.js
+320 silly gunzTarPerm modified mode [ 'lib/Object.assign.js', 420, 436 ]
+321 silly gunzTarPerm extractEntry lib/getUnboundedScrollPosition.js
+322 silly gunzTarPerm modified mode [ 'lib/getUnboundedScrollPosition.js', 420, 436 ]
+323 silly gunzTarPerm extractEntry lib/MobileSafariClickEventPlugin.js
+324 silly gunzTarPerm modified mode [ 'lib/MobileSafariClickEventPlugin.js', 420, 436 ]
+325 silly gunzTarPerm extractEntry lib/hyphenate.js
+326 silly gunzTarPerm modified mode [ 'lib/hyphenate.js', 420, 436 ]
+327 silly gunzTarPerm extractEntry lib/LocalEventTrapMixin.js
+328 silly gunzTarPerm modified mode [ 'lib/LocalEventTrapMixin.js', 420, 436 ]
+329 silly gunzTarPerm extractEntry lib/hyphenateStyleName.js
+330 silly gunzTarPerm modified mode [ 'lib/hyphenateStyleName.js', 420, 436 ]
+331 silly gunzTarPerm extractEntry lib/LinkedValueUtils.js
+332 silly gunzTarPerm modified mode [ 'lib/LinkedValueUtils.js', 420, 436 ]
+333 silly gunzTarPerm extractEntry lib/instantiateReactComponent.js
+334 silly gunzTarPerm modified mode [ 'lib/instantiateReactComponent.js', 420, 436 ]
+335 silly gunzTarPerm extractEntry lib/LinkedStateMixin.js
+336 silly gunzTarPerm modified mode [ 'lib/LinkedStateMixin.js', 420, 436 ]
+337 silly gunzTarPerm extractEntry lib/invariant.js
+338 silly gunzTarPerm modified mode [ 'lib/invariant.js', 420, 436 ]
+339 silly gunzTarPerm extractEntry lib/HTMLDOMPropertyConfig.js
+340 silly gunzTarPerm modified mode [ 'lib/HTMLDOMPropertyConfig.js', 420, 436 ]
+341 silly gunzTarPerm extractEntry lib/isEventSupported.js
+342 silly gunzTarPerm modified mode [ 'lib/isEventSupported.js', 420, 436 ]
+343 silly gunzTarPerm extractEntry lib/ExecutionEnvironment.js
+344 silly gunzTarPerm modified mode [ 'lib/ExecutionEnvironment.js', 420, 436 ]
+345 silly gunzTarPerm extractEntry lib/isNode.js
+346 silly gunzTarPerm modified mode [ 'lib/isNode.js', 420, 436 ]
+347 silly gunzTarPerm extractEntry lib/EventPropagators.js
+348 silly gunzTarPerm modified mode [ 'lib/EventPropagators.js', 420, 436 ]
+349 silly gunzTarPerm extractEntry lib/isTextInputElement.js
+350 silly gunzTarPerm modified mode [ 'lib/isTextInputElement.js', 420, 436 ]
+351 silly gunzTarPerm extractEntry lib/EventPluginUtils.js
+352 silly gunzTarPerm modified mode [ 'lib/EventPluginUtils.js', 420, 436 ]
+353 silly gunzTarPerm extractEntry lib/isTextNode.js
+354 silly gunzTarPerm modified mode [ 'lib/isTextNode.js', 420, 436 ]
+355 silly gunzTarPerm extractEntry lib/EventPluginRegistry.js
+356 silly gunzTarPerm modified mode [ 'lib/EventPluginRegistry.js', 420, 436 ]
+357 silly gunzTarPerm extractEntry lib/joinClasses.js
+358 silly gunzTarPerm modified mode [ 'lib/joinClasses.js', 420, 436 ]
+359 silly gunzTarPerm extractEntry lib/EventPluginHub.js
+360 silly gunzTarPerm modified mode [ 'lib/EventPluginHub.js', 420, 436 ]
+361 silly gunzTarPerm extractEntry lib/keyMirror.js
+362 silly gunzTarPerm modified mode [ 'lib/keyMirror.js', 420, 436 ]
+363 silly gunzTarPerm extractEntry lib/EventListener.js
+364 silly gunzTarPerm modified mode [ 'lib/EventListener.js', 420, 436 ]
+365 silly gunzTarPerm extractEntry lib/keyOf.js
+366 silly gunzTarPerm modified mode [ 'lib/keyOf.js', 420, 436 ]
+367 silly gunzTarPerm extractEntry lib/EventConstants.js
+368 silly gunzTarPerm modified mode [ 'lib/EventConstants.js', 420, 436 ]
+369 silly gunzTarPerm extractEntry lib/mapObject.js
+370 silly gunzTarPerm modified mode [ 'lib/mapObject.js', 420, 436 ]
+371 silly gunzTarPerm extractEntry lib/EnterLeaveEventPlugin.js
+372 silly gunzTarPerm modified mode [ 'lib/EnterLeaveEventPlugin.js', 420, 436 ]
+373 silly gunzTarPerm extractEntry lib/memoizeStringOnly.js
+374 silly gunzTarPerm modified mode [ 'lib/memoizeStringOnly.js', 420, 436 ]
+375 silly gunzTarPerm extractEntry lib/DefaultEventPluginOrder.js
+376 silly gunzTarPerm modified mode [ 'lib/DefaultEventPluginOrder.js', 420, 436 ]
+377 silly gunzTarPerm extractEntry lib/merge.js
+378 silly gunzTarPerm modified mode [ 'lib/merge.js', 420, 436 ]
+379 silly gunzTarPerm extractEntry lib/Danger.js
+380 silly gunzTarPerm modified mode [ 'lib/Danger.js', 420, 436 ]
+381 silly gunzTarPerm extractEntry lib/mergeInto.js
+382 silly gunzTarPerm modified mode [ 'lib/mergeInto.js', 420, 436 ]
+383 silly gunzTarPerm extractEntry lib/DOMPropertyOperations.js
+384 silly gunzTarPerm modified mode [ 'lib/DOMPropertyOperations.js', 420, 436 ]
+385 silly gunzTarPerm extractEntry lib/monitorCodeUse.js
+386 silly gunzTarPerm modified mode [ 'lib/monitorCodeUse.js', 420, 436 ]
+387 silly gunzTarPerm extractEntry lib/DOMProperty.js
+388 silly gunzTarPerm modified mode [ 'lib/DOMProperty.js', 420, 436 ]
+389 silly gunzTarPerm extractEntry lib/onlyChild.js
+390 silly gunzTarPerm modified mode [ 'lib/onlyChild.js', 420, 436 ]
+391 silly gunzTarPerm extractEntry lib/DOMChildrenOperations.js
+392 silly gunzTarPerm modified mode [ 'lib/DOMChildrenOperations.js', 420, 436 ]
+393 silly gunzTarPerm extractEntry lib/performance.js
+394 silly gunzTarPerm modified mode [ 'lib/performance.js', 420, 436 ]
+395 silly gunzTarPerm extractEntry lib/CompositionEventPlugin.js
+396 silly gunzTarPerm modified mode [ 'lib/CompositionEventPlugin.js', 420, 436 ]
+397 silly gunzTarPerm extractEntry lib/performanceNow.js
+398 silly gunzTarPerm modified mode [ 'lib/performanceNow.js', 420, 436 ]
+399 silly gunzTarPerm extractEntry lib/ClientReactRootIndex.js
+400 silly gunzTarPerm modified mode [ 'lib/ClientReactRootIndex.js', 420, 436 ]
+401 silly gunzTarPerm extractEntry lib/setInnerHTML.js
+402 silly gunzTarPerm modified mode [ 'lib/setInnerHTML.js', 420, 436 ]
+403 silly gunzTarPerm extractEntry lib/ChangeEventPlugin.js
+404 silly gunzTarPerm modified mode [ 'lib/ChangeEventPlugin.js', 420, 436 ]
+405 silly gunzTarPerm extractEntry lib/shallowEqual.js
+406 silly gunzTarPerm modified mode [ 'lib/shallowEqual.js', 420, 436 ]
+407 silly gunzTarPerm extractEntry lib/CallbackQueue.js
+408 silly gunzTarPerm modified mode [ 'lib/CallbackQueue.js', 420, 436 ]
+409 silly gunzTarPerm extractEntry lib/shouldUpdateReactComponent.js
+410 silly gunzTarPerm modified mode [ 'lib/shouldUpdateReactComponent.js', 420, 436 ]
+411 silly gunzTarPerm extractEntry lib/CSSPropertyOperations.js
+412 silly gunzTarPerm modified mode [ 'lib/CSSPropertyOperations.js', 420, 436 ]
+413 silly gunzTarPerm extractEntry lib/toArray.js
+414 silly gunzTarPerm modified mode [ 'lib/toArray.js', 420, 436 ]
+415 silly gunzTarPerm extractEntry lib/CSSProperty.js
+416 silly gunzTarPerm modified mode [ 'lib/CSSProperty.js', 420, 436 ]
+417 silly gunzTarPerm extractEntry lib/traverseAllChildren.js
+418 silly gunzTarPerm modified mode [ 'lib/traverseAllChildren.js', 420, 436 ]
+419 silly gunzTarPerm extractEntry lib/CSSCore.js
+420 silly gunzTarPerm modified mode [ 'lib/CSSCore.js', 420, 436 ]
+421 silly gunzTarPerm extractEntry lib/update.js
+422 silly gunzTarPerm modified mode [ 'lib/update.js', 420, 436 ]
+423 silly gunzTarPerm extractEntry lib/BeforeInputEventPlugin.js
+424 silly gunzTarPerm modified mode [ 'lib/BeforeInputEventPlugin.js', 420, 436 ]
+425 silly gunzTarPerm extractEntry lib/warning.js
+426 silly gunzTarPerm modified mode [ 'lib/warning.js', 420, 436 ]
+427 silly gunzTarPerm extractEntry lib/ReactServerRendering.js
+428 silly gunzTarPerm modified mode [ 'lib/ReactServerRendering.js', 420, 436 ]
+429 silly lockFile d29a3f78-hlight-Subset-node-modules-react tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+430 silly lockFile d29a3f78-hlight-Subset-node-modules-react tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+431 silly lockFile 538a9cd6-ole-npm-react-0-12-2-package-tgz tar:///home/niole/.npm/react/0.12.2/package.tgz
+432 silly lockFile 538a9cd6-ole-npm-react-0-12-2-package-tgz tar:///home/niole/.npm/react/0.12.2/package.tgz
+433 info preinstall react@0.12.2
+434 verbose readDependencies using package.json deps
+435 verbose readDependencies using package.json deps
+436 verbose cache add [ 'envify@^3.0.0', null ]
+437 verbose cache add name=undefined spec="envify@^3.0.0" args=["envify@^3.0.0",null]
+438 verbose parsed url { protocol: null,
+438 verbose parsed url   slashes: null,
+438 verbose parsed url   auth: null,
+438 verbose parsed url   host: null,
+438 verbose parsed url   port: null,
+438 verbose parsed url   hostname: null,
+438 verbose parsed url   hash: null,
+438 verbose parsed url   search: null,
+438 verbose parsed url   query: null,
+438 verbose parsed url   pathname: 'envify@^3.0.0',
+438 verbose parsed url   path: 'envify@^3.0.0',
+438 verbose parsed url   href: 'envify@^3.0.0' }
+439 verbose cache add name="envify" spec="^3.0.0" args=["envify","^3.0.0"]
+440 verbose parsed url { protocol: null,
+440 verbose parsed url   slashes: null,
+440 verbose parsed url   auth: null,
+440 verbose parsed url   host: null,
+440 verbose parsed url   port: null,
+440 verbose parsed url   hostname: null,
+440 verbose parsed url   hash: null,
+440 verbose parsed url   search: null,
+440 verbose parsed url   query: null,
+440 verbose parsed url   pathname: '^3.0.0',
+440 verbose parsed url   path: '^3.0.0',
+440 verbose parsed url   href: '^3.0.0' }
+441 verbose addNamed [ 'envify', '^3.0.0' ]
+442 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
+443 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
+444 verbose lock envify@^3.0.0 /home/niole/.npm/60731133-envify-3-0-0.lock
+445 silly addNameRange { name: 'envify', range: '>=3.0.0-0 <4.0.0-0', hasData: false }
+446 verbose request where is /envify
+447 verbose request registry https://registry.npmjs.org/
+448 verbose url raw /envify
+449 verbose url resolving [ 'https://registry.npmjs.org/', './envify' ]
+450 verbose url resolved https://registry.npmjs.org/envify
+451 verbose request where is https://registry.npmjs.org/envify
+452 info trying registry request attempt 1 at 22:14:19
+453 verbose etag "8YTA8B4LU2ABOJBTOWE0BGMYM"
+454 http GET https://registry.npmjs.org/envify
+455 http 304 https://registry.npmjs.org/envify
+456 silly registry.get cb [ 304,
+456 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:19 GMT',
+456 silly registry.get     via: '1.1 varnish',
+456 silly registry.get     'cache-control': 'max-age=60',
+456 silly registry.get     etag: '"8YTA8B4LU2ABOJBTOWE0BGMYM"',
+456 silly registry.get     age: '54',
+456 silly registry.get     connection: 'keep-alive',
+456 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+456 silly registry.get     'x-cache': 'HIT',
+456 silly registry.get     'x-cache-hits': '1',
+456 silly registry.get     'x-timer': 'S1436148859.400045,VS0,VE0',
+456 silly registry.get     vary: 'Accept' } ]
+457 verbose etag https://registry.npmjs.org/envify from cache
+458 silly addNameRange number 2 { name: 'envify', range: '>=3.0.0-0 <4.0.0-0', hasData: true }
+459 silly addNameRange versions [ 'envify',
+459 silly addNameRange   [ '0.0.1',
+459 silly addNameRange     '0.1.0',
+459 silly addNameRange     '0.2.0',
+459 silly addNameRange     '1.0.0',
+459 silly addNameRange     '1.0.1',
+459 silly addNameRange     '1.1.0',
+459 silly addNameRange     '1.2.0',
+459 silly addNameRange     '1.2.1',
+459 silly addNameRange     '2.0.0',
+459 silly addNameRange     '2.0.1',
+459 silly addNameRange     '3.0.0',
+459 silly addNameRange     '3.1.0',
+459 silly addNameRange     '3.2.0',
+459 silly addNameRange     '3.3.0',
+459 silly addNameRange     '3.3.1',
+459 silly addNameRange     '3.4.0' ] ]
+460 verbose addNamed [ 'envify', '3.4.0' ]
+461 verbose addNamed [ '3.4.0', '3.4.0' ]
+462 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
+463 verbose lock envify@3.4.0 /home/niole/.npm/b60ef226-envify-3-4-0.lock
+464 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
+465 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
+466 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
+467 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
+468 silly resolved [ { name: 'envify',
+468 silly resolved     version: '3.4.0',
+468 silly resolved     description: 'Selectively replace Node-style environment variables with plain strings.',
+468 silly resolved     main: 'index.js',
+468 silly resolved     scripts: { test: 'node test.js | tap-spec' },
+468 silly resolved     bin: { envify: 'bin/envify' },
+468 silly resolved     repository: { type: 'git', url: 'git://github.com/hughsk/envify.git' },
+468 silly resolved     author:
+468 silly resolved      { name: 'Hugh Kennedy',
+468 silly resolved        email: 'hughskennedy@gmail.com',
+468 silly resolved        url: 'http://hughskennedy.com/' },
+468 silly resolved     license: 'MIT',
+468 silly resolved     devDependencies: { 'tap-spec': '^1.0.1', tape: '~2.3.2' },
+468 silly resolved     dependencies: { through: '~2.3.4', jstransform: '^10.0.1' },
+468 silly resolved     keywords:
+468 silly resolved      [ 'environment',
+468 silly resolved        'variables',
+468 silly resolved        'browserify',
+468 silly resolved        'browserify-transform',
+468 silly resolved        'transform',
+468 silly resolved        'source',
+468 silly resolved        'configuration' ],
+468 silly resolved     gitHead: 'c42c2052e33f82b651a992686c3578639bf0339b',
+468 silly resolved     bugs: { url: 'https://github.com/hughsk/envify/issues' },
+468 silly resolved     homepage: 'https://github.com/hughsk/envify',
+468 silly resolved     _id: 'envify@3.4.0',
+468 silly resolved     _shasum: 'a0bed52222529076a02fabf6ce00eef42d7b6734',
+468 silly resolved     _from: 'envify@^3.0.0',
+468 silly resolved     _npmVersion: '1.4.28',
+468 silly resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+468 silly resolved     maintainers: [ [Object], [Object] ],
+468 silly resolved     dist:
+468 silly resolved      { shasum: 'a0bed52222529076a02fabf6ce00eef42d7b6734',
+468 silly resolved        tarball: 'http://registry.npmjs.org/envify/-/envify-3.4.0.tgz' },
+468 silly resolved     directories: {},
+468 silly resolved     _resolved: 'https://registry.npmjs.org/envify/-/envify-3.4.0.tgz',
+468 silly resolved     readme: 'ERROR: No README data found!' } ]
+469 info install envify@3.4.0 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+470 info installOne envify@3.4.0
+471 verbose node_modules/react/node_modules/envify unbuild
+472 verbose tar unpack /home/niole/.npm/envify/3.4.0/package.tgz
+473 silly lockFile a3845597-odules-react-node-modules-envify tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+474 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify /home/niole/.npm/a3845597-odules-react-node-modules-envify.lock
+475 silly lockFile dcb1a28f-ole-npm-envify-3-4-0-package-tgz tar:///home/niole/.npm/envify/3.4.0/package.tgz
+476 verbose lock tar:///home/niole/.npm/envify/3.4.0/package.tgz /home/niole/.npm/dcb1a28f-ole-npm-envify-3-4-0-package-tgz.lock
+477 silly gunzTarPerm modes [ '775', '664' ]
+478 silly gunzTarPerm extractEntry package.json
+479 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+480 silly gunzTarPerm extractEntry .npmignore
+481 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+482 silly gunzTarPerm extractEntry README.md
+483 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+484 silly gunzTarPerm extractEntry visitors.js
+485 silly gunzTarPerm modified mode [ 'visitors.js', 420, 436 ]
+486 silly gunzTarPerm extractEntry index.js
+487 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+488 silly gunzTarPerm extractEntry custom.js
+489 silly gunzTarPerm modified mode [ 'custom.js', 420, 436 ]
+490 silly gunzTarPerm extractEntry bin/envify
+491 silly gunzTarPerm modified mode [ 'bin/envify', 493, 509 ]
+492 silly lockFile a3845597-odules-react-node-modules-envify tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+493 silly lockFile a3845597-odules-react-node-modules-envify tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+494 silly lockFile dcb1a28f-ole-npm-envify-3-4-0-package-tgz tar:///home/niole/.npm/envify/3.4.0/package.tgz
+495 silly lockFile dcb1a28f-ole-npm-envify-3-4-0-package-tgz tar:///home/niole/.npm/envify/3.4.0/package.tgz
+496 info preinstall envify@3.4.0
+497 verbose readDependencies using package.json deps
+498 verbose readDependencies using package.json deps
+499 verbose cache add [ 'through@~2.3.4', null ]
+500 verbose cache add name=undefined spec="through@~2.3.4" args=["through@~2.3.4",null]
+501 verbose parsed url { protocol: null,
+501 verbose parsed url   slashes: null,
+501 verbose parsed url   auth: null,
+501 verbose parsed url   host: null,
+501 verbose parsed url   port: null,
+501 verbose parsed url   hostname: null,
+501 verbose parsed url   hash: null,
+501 verbose parsed url   search: null,
+501 verbose parsed url   query: null,
+501 verbose parsed url   pathname: 'through@~2.3.4',
+501 verbose parsed url   path: 'through@~2.3.4',
+501 verbose parsed url   href: 'through@~2.3.4' }
+502 verbose cache add [ 'jstransform@^10.0.1', null ]
+503 verbose cache add name=undefined spec="jstransform@^10.0.1" args=["jstransform@^10.0.1",null]
+504 verbose parsed url { protocol: null,
+504 verbose parsed url   slashes: null,
+504 verbose parsed url   auth: null,
+504 verbose parsed url   host: null,
+504 verbose parsed url   port: null,
+504 verbose parsed url   hostname: null,
+504 verbose parsed url   hash: null,
+504 verbose parsed url   search: null,
+504 verbose parsed url   query: null,
+504 verbose parsed url   pathname: 'jstransform@^10.0.1',
+504 verbose parsed url   path: 'jstransform@^10.0.1',
+504 verbose parsed url   href: 'jstransform@^10.0.1' }
+505 verbose cache add name="through" spec="~2.3.4" args=["through","~2.3.4"]
+506 verbose parsed url { protocol: null,
+506 verbose parsed url   slashes: null,
+506 verbose parsed url   auth: null,
+506 verbose parsed url   host: null,
+506 verbose parsed url   port: null,
+506 verbose parsed url   hostname: null,
+506 verbose parsed url   hash: null,
+506 verbose parsed url   search: null,
+506 verbose parsed url   query: null,
+506 verbose parsed url   pathname: '~2.3.4',
+506 verbose parsed url   path: '~2.3.4',
+506 verbose parsed url   href: '~2.3.4' }
+507 verbose addNamed [ 'through', '~2.3.4' ]
+508 verbose addNamed [ null, '>=2.3.4-0 <2.4.0-0' ]
+509 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
+510 verbose lock through@~2.3.4 /home/niole/.npm/560c0a42-through-2-3-4.lock
+511 verbose cache add name="jstransform" spec="^10.0.1" args=["jstransform","^10.0.1"]
+512 verbose parsed url { protocol: null,
+512 verbose parsed url   slashes: null,
+512 verbose parsed url   auth: null,
+512 verbose parsed url   host: null,
+512 verbose parsed url   port: null,
+512 verbose parsed url   hostname: null,
+512 verbose parsed url   hash: null,
+512 verbose parsed url   search: null,
+512 verbose parsed url   query: null,
+512 verbose parsed url   pathname: '^10.0.1',
+512 verbose parsed url   path: '^10.0.1',
+512 verbose parsed url   href: '^10.0.1' }
+513 verbose addNamed [ 'jstransform', '^10.0.1' ]
+514 verbose addNamed [ null, '>=10.0.1-0 <11.0.0-0' ]
+515 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
+516 verbose lock jstransform@^10.0.1 /home/niole/.npm/92916357-jstransform-10-0-1.lock
+517 silly addNameRange { name: 'through', range: '>=2.3.4-0 <2.4.0-0', hasData: false }
+518 silly addNameRange { name: 'jstransform',
+518 silly addNameRange   range: '>=10.0.1-0 <11.0.0-0',
+518 silly addNameRange   hasData: false }
+519 verbose request where is /through
+520 verbose request registry https://registry.npmjs.org/
+521 verbose url raw /through
+522 verbose url resolving [ 'https://registry.npmjs.org/', './through' ]
+523 verbose url resolved https://registry.npmjs.org/through
+524 verbose request where is https://registry.npmjs.org/through
+525 info trying registry request attempt 1 at 22:14:19
+526 verbose etag "2EWEJADOTDMJ5077ZI2RC2BJZ"
+527 http GET https://registry.npmjs.org/through
+528 verbose request where is /jstransform
+529 verbose request registry https://registry.npmjs.org/
+530 verbose url raw /jstransform
+531 verbose url resolving [ 'https://registry.npmjs.org/', './jstransform' ]
+532 verbose url resolved https://registry.npmjs.org/jstransform
+533 verbose request where is https://registry.npmjs.org/jstransform
+534 info trying registry request attempt 1 at 22:14:19
+535 verbose etag "D2IQBRUY3JR8MJW9DINAMUXW6"
+536 http GET https://registry.npmjs.org/jstransform
+537 http 304 https://registry.npmjs.org/through
+538 silly registry.get cb [ 304,
+538 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:19 GMT',
+538 silly registry.get     via: '1.1 varnish',
+538 silly registry.get     'cache-control': 'max-age=60',
+538 silly registry.get     etag: '"2EWEJADOTDMJ5077ZI2RC2BJZ"',
+538 silly registry.get     age: '52',
+538 silly registry.get     connection: 'keep-alive',
+538 silly registry.get     'x-served-by': 'cache-jfk1031-JFK',
+538 silly registry.get     'x-cache': 'HIT',
+538 silly registry.get     'x-cache-hits': '1',
+538 silly registry.get     'x-timer': 'S1436148859.727379,VS0,VE0',
+538 silly registry.get     vary: 'Accept' } ]
+539 verbose etag https://registry.npmjs.org/through from cache
+540 silly addNameRange number 2 { name: 'through', range: '>=2.3.4-0 <2.4.0-0', hasData: true }
+541 silly addNameRange versions [ 'through',
+541 silly addNameRange   [ '0.0.1',
+541 silly addNameRange     '0.0.2',
+541 silly addNameRange     '0.0.3',
+541 silly addNameRange     '0.0.4',
+541 silly addNameRange     '0.1.0',
+541 silly addNameRange     '0.1.1',
+541 silly addNameRange     '0.1.2',
+541 silly addNameRange     '0.1.3',
+541 silly addNameRange     '0.1.4',
+541 silly addNameRange     '1.0.0',
+541 silly addNameRange     '1.1.0',
+541 silly addNameRange     '1.1.1',
+541 silly addNameRange     '1.1.2',
+541 silly addNameRange     '2.0.0',
+541 silly addNameRange     '2.1.0',
+541 silly addNameRange     '2.2.0',
+541 silly addNameRange     '2.2.1',
+541 silly addNameRange     '2.2.2',
+541 silly addNameRange     '2.2.4',
+541 silly addNameRange     '2.2.5',
+541 silly addNameRange     '2.2.6',
+541 silly addNameRange     '2.2.7',
+541 silly addNameRange     '2.3.1',
+541 silly addNameRange     '2.3.2',
+541 silly addNameRange     '2.3.3',
+541 silly addNameRange     '2.3.4',
+541 silly addNameRange     '2.3.6',
+541 silly addNameRange     '2.3.7',
+541 silly addNameRange     '2.3.8' ] ]
+542 verbose addNamed [ 'through', '2.3.8' ]
+543 verbose addNamed [ '2.3.8', '2.3.8' ]
+544 silly lockFile 05586770-through-2-3-8 through@2.3.8
+545 verbose lock through@2.3.8 /home/niole/.npm/05586770-through-2-3-8.lock
+546 silly lockFile 05586770-through-2-3-8 through@2.3.8
+547 silly lockFile 05586770-through-2-3-8 through@2.3.8
+548 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
+549 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
+550 http 304 https://registry.npmjs.org/jstransform
+551 silly registry.get cb [ 304,
+551 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:19 GMT',
+551 silly registry.get     via: '1.1 varnish',
+551 silly registry.get     'cache-control': 'max-age=60',
+551 silly registry.get     etag: '"D2IQBRUY3JR8MJW9DINAMUXW6"',
+551 silly registry.get     age: '0',
+551 silly registry.get     connection: 'keep-alive',
+551 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+551 silly registry.get     'x-cache': 'HIT',
+551 silly registry.get     'x-cache-hits': '1',
+551 silly registry.get     'x-timer': 'S1436148859.815979,VS0,VE27',
+551 silly registry.get     vary: 'Accept' } ]
+552 verbose etag https://registry.npmjs.org/jstransform from cache
+553 silly addNameRange number 2 { name: 'jstransform',
+553 silly addNameRange   range: '>=10.0.1-0 <11.0.0-0',
+553 silly addNameRange   hasData: true }
+554 silly addNameRange versions [ 'jstransform',
+554 silly addNameRange   [ '1.0.0',
+554 silly addNameRange     '1.0.1',
+554 silly addNameRange     '2.0.1',
+554 silly addNameRange     '2.0.2',
+554 silly addNameRange     '2.0.3',
+554 silly addNameRange     '3.0.0',
+554 silly addNameRange     '4.0.0',
+554 silly addNameRange     '4.0.1',
+554 silly addNameRange     '5.0.0',
+554 silly addNameRange     '6.0.0',
+554 silly addNameRange     '6.0.1',
+554 silly addNameRange     '6.1.0',
+554 silly addNameRange     '6.2.0',
+554 silly addNameRange     '6.3.0',
+554 silly addNameRange     '6.3.2',
+554 silly addNameRange     '7.0.0',
+554 silly addNameRange     '8.0.0',
+554 silly addNameRange     '8.1.0',
+554 silly addNameRange     '8.2.0',
+554 silly addNameRange     '9.0.0',
+554 silly addNameRange     '9.1.0',
+554 silly addNameRange     '9.1.1',
+554 silly addNameRange     '10.0.0',
+554 silly addNameRange     '10.0.1',
+554 silly addNameRange     '10.1.0',
+554 silly addNameRange     '11.0.0',
+554 silly addNameRange     '11.0.1',
+554 silly addNameRange     '11.0.2' ] ]
+555 verbose addNamed [ 'jstransform', '10.1.0' ]
+556 verbose addNamed [ '10.1.0', '10.1.0' ]
+557 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
+558 verbose lock jstransform@10.1.0 /home/niole/.npm/a43da3f1-jstransform-10-1-0.lock
+559 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
+560 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
+561 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
+562 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
+563 silly resolved [ { name: 'through',
+563 silly resolved     version: '2.3.8',
+563 silly resolved     description: 'simplified stream construction',
+563 silly resolved     main: 'index.js',
+563 silly resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
+563 silly resolved     devDependencies: { 'stream-spec': '~0.3.5', tape: '~2.3.2', from: '~0.1.3' },
+563 silly resolved     keywords: [ 'stream', 'streams', 'user-streams', 'pipe' ],
+563 silly resolved     author:
+563 silly resolved      { name: 'Dominic Tarr',
+563 silly resolved        email: 'dominic.tarr@gmail.com',
+563 silly resolved        url: 'dominictarr.com' },
+563 silly resolved     license: 'MIT',
+563 silly resolved     repository:
+563 silly resolved      { type: 'git',
+563 silly resolved        url: 'git+https://github.com/dominictarr/through.git' },
+563 silly resolved     homepage: 'https://github.com/dominictarr/through',
+563 silly resolved     testling: { browsers: [Object], files: 'test/*.js' },
+563 silly resolved     gitHead: '2c5a6f9a0cc54da759b6e10964f2081c358e49dc',
+563 silly resolved     bugs: { url: 'https://github.com/dominictarr/through/issues' },
+563 silly resolved     _id: 'through@2.3.8',
+563 silly resolved     _shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+563 silly resolved     _from: 'through@~2.3.4',
+563 silly resolved     _npmVersion: '2.12.0',
+563 silly resolved     _nodeVersion: '2.3.1',
+563 silly resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
+563 silly resolved     maintainers: [ [Object] ],
+563 silly resolved     dist:
+563 silly resolved      { shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
+563 silly resolved        tarball: 'http://registry.npmjs.org/through/-/through-2.3.8.tgz' },
+563 silly resolved     directories: {},
+563 silly resolved     _resolved: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz',
+563 silly resolved     readme: 'ERROR: No README data found!' },
+563 silly resolved   { name: 'jstransform',
+563 silly resolved     version: '10.1.0',
+563 silly resolved     description: 'A simple AST visitor-based JS transformer',
+563 silly resolved     contributors: [ [Object] ],
+563 silly resolved     main: 'src/jstransform',
+563 silly resolved     repository: { type: 'git', url: 'git@github.com:facebook/jstransform.git' },
+563 silly resolved     keywords: [ 'transformer', 'compiler', 'syntax', 'visitor' ],
+563 silly resolved     dependencies:
+563 silly resolved      { base62: '0.1.1',
+563 silly resolved        'esprima-fb': '13001.1001.0-dev-harmony-fb',
+563 silly resolved        'source-map': '0.1.31' },
+563 silly resolved     licenses: [ [Object] ],
+563 silly resolved     engines: { node: '>=0.8.8' },
+563 silly resolved     devDependencies: { 'jest-cli': '^0.2', jshint: '^2.5.10' },
+563 silly resolved     jest:
+563 silly resolved      { scriptPreprocessor: '<rootDir>/jestPreprocessor.js',
+563 silly resolved        setupEnvScriptFile: '<rootDir>/jestEnvironment.js',
+563 silly resolved        testPathIgnorePatterns: [Object] },
+563 silly resolved     scripts:
+563 silly resolved      { prepublish: 'jest && jshint --config=.jshintrc --exclude=node_modules .',
+563 silly resolved        test: 'jest && jshint --config=.jshintrc --exclude=node_modules .' },
+563 silly resolved     gitHead: '90201cf6e40549bacf0efe8915600658a9564471',
+563 silly resolved     bugs: { url: 'https://github.com/facebook/jstransform/issues' },
+563 silly resolved     homepage: 'https://github.com/facebook/jstransform',
+563 silly resolved     _id: 'jstransform@10.1.0',
+563 silly resolved     _shasum: 'b4c49bf63f162c108b0348399a8737c713b0a83a',
+563 silly resolved     _from: 'jstransform@^10.0.1',
+563 silly resolved     _npmVersion: '1.4.16',
+563 silly resolved     _npmUser: { name: 'gabelevi', email: 'gabelevi@gmail.com' },
+563 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+563 silly resolved     dist:
+563 silly resolved      { shasum: 'b4c49bf63f162c108b0348399a8737c713b0a83a',
+563 silly resolved        tarball: 'http://registry.npmjs.org/jstransform/-/jstransform-10.1.0.tgz' },
+563 silly resolved     directories: {},
+563 silly resolved     _resolved: 'https://registry.npmjs.org/jstransform/-/jstransform-10.1.0.tgz',
+563 silly resolved     readme: 'ERROR: No README data found!' } ]
+564 info install through@2.3.8 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+565 info install jstransform@10.1.0 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+566 info installOne through@2.3.8
+567 info installOne jstransform@10.1.0
+568 verbose node_modules/react/node_modules/envify/node_modules/through unbuild
+569 verbose node_modules/react/node_modules/envify/node_modules/jstransform unbuild
+570 verbose tar unpack /home/niole/.npm/through/2.3.8/package.tgz
+571 silly lockFile 1be77385-ules-envify-node-modules-through tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through
+572 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through /home/niole/.npm/1be77385-ules-envify-node-modules-through.lock
+573 silly lockFile c8952255-le-npm-through-2-3-8-package-tgz tar:///home/niole/.npm/through/2.3.8/package.tgz
+574 verbose lock tar:///home/niole/.npm/through/2.3.8/package.tgz /home/niole/.npm/c8952255-le-npm-through-2-3-8-package-tgz.lock
+575 verbose tar unpack /home/niole/.npm/jstransform/10.1.0/package.tgz
+576 silly lockFile 2acf9548--envify-node-modules-jstransform tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+577 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform /home/niole/.npm/2acf9548--envify-node-modules-jstransform.lock
+578 silly lockFile d6eea899-m-jstransform-10-1-0-package-tgz tar:///home/niole/.npm/jstransform/10.1.0/package.tgz
+579 verbose lock tar:///home/niole/.npm/jstransform/10.1.0/package.tgz /home/niole/.npm/d6eea899-m-jstransform-10-1-0-package-tgz.lock
+580 silly gunzTarPerm modes [ '775', '664' ]
+581 silly gunzTarPerm modes [ '775', '664' ]
+582 silly gunzTarPerm extractEntry package.json
+583 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+584 silly gunzTarPerm extractEntry package.json
+585 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+586 silly gunzTarPerm extractEntry index.js
+587 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+588 silly gunzTarPerm extractEntry .travis.yml
+589 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+590 silly gunzTarPerm extractEntry .npmignore
+591 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+592 silly gunzTarPerm extractEntry README.md
+593 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+594 silly gunzTarPerm extractEntry LICENSE.APACHE2
+595 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 436 ]
+596 silly gunzTarPerm extractEntry LICENSE.MIT
+597 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 436 ]
+598 silly gunzTarPerm extractEntry LICENSE
+599 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+600 silly gunzTarPerm extractEntry jestEnvironment.js
+601 silly gunzTarPerm modified mode [ 'jestEnvironment.js', 420, 436 ]
+602 silly gunzTarPerm extractEntry jestPreprocessor.js
+603 silly gunzTarPerm modified mode [ 'jestPreprocessor.js', 420, 436 ]
+604 silly gunzTarPerm extractEntry readme.markdown
+605 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
+606 silly gunzTarPerm extractEntry test/async.js
+607 silly gunzTarPerm modified mode [ 'test/async.js', 420, 436 ]
+608 silly gunzTarPerm extractEntry test/auto-destroy.js
+609 silly gunzTarPerm modified mode [ 'test/auto-destroy.js', 420, 436 ]
+610 silly gunzTarPerm extractEntry test/buffering.js
+611 silly gunzTarPerm modified mode [ 'test/buffering.js', 420, 436 ]
+612 silly gunzTarPerm extractEntry .jshintrc
+613 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+614 silly gunzTarPerm extractEntry .travis.yml
+615 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+616 silly gunzTarPerm extractEntry test/end.js
+617 silly gunzTarPerm modified mode [ 'test/end.js', 420, 436 ]
+618 silly gunzTarPerm extractEntry test/index.js
+619 silly gunzTarPerm modified mode [ 'test/index.js', 420, 436 ]
+620 silly gunzTarPerm extractEntry polyfill/Object.es6.js
+621 silly gunzTarPerm modified mode [ 'polyfill/Object.es6.js', 420, 436 ]
+622 silly gunzTarPerm extractEntry src/docblock.js
+623 silly gunzTarPerm modified mode [ 'src/docblock.js', 420, 436 ]
+624 silly gunzTarPerm extractEntry src/jstransform.js
+625 silly gunzTarPerm modified mode [ 'src/jstransform.js', 420, 436 ]
+626 silly gunzTarPerm extractEntry src/utils.js
+627 silly gunzTarPerm modified mode [ 'src/utils.js', 420, 436 ]
+628 silly gunzTarPerm extractEntry src/__tests__/jstransform-test.js
+629 silly gunzTarPerm modified mode [ 'src/__tests__/jstransform-test.js', 420, 436 ]
+630 silly gunzTarPerm extractEntry src/__tests__/jstransform-utils-test.js
+631 silly gunzTarPerm modified mode [ 'src/__tests__/jstransform-utils-test.js', 420, 436 ]
+632 silly gunzTarPerm extractEntry visitors/type-syntax.js
+633 silly gunzTarPerm modified mode [ 'visitors/type-syntax.js', 420, 436 ]
+634 silly gunzTarPerm extractEntry visitors/es6-class-visitors.js
+635 silly gunzTarPerm modified mode [ 'visitors/es6-class-visitors.js', 420, 436 ]
+636 silly gunzTarPerm extractEntry visitors/es6-destructuring-visitors.js
+637 silly gunzTarPerm modified mode [ 'visitors/es6-destructuring-visitors.js', 420, 436 ]
+638 silly gunzTarPerm extractEntry visitors/es6-object-concise-method-visitors.js
+639 silly gunzTarPerm modified mode [ 'visitors/es6-object-concise-method-visitors.js', 420, 436 ]
+640 silly gunzTarPerm extractEntry visitors/es6-object-short-notation-visitors.js
+641 silly gunzTarPerm modified mode [ 'visitors/es6-object-short-notation-visitors.js', 420, 436 ]
+642 silly gunzTarPerm extractEntry visitors/es6-call-spread-visitors.js
+643 silly gunzTarPerm modified mode [ 'visitors/es6-call-spread-visitors.js', 420, 436 ]
+644 silly lockFile 1be77385-ules-envify-node-modules-through tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through
+645 silly lockFile 1be77385-ules-envify-node-modules-through tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through
+646 silly lockFile c8952255-le-npm-through-2-3-8-package-tgz tar:///home/niole/.npm/through/2.3.8/package.tgz
+647 silly lockFile c8952255-le-npm-through-2-3-8-package-tgz tar:///home/niole/.npm/through/2.3.8/package.tgz
+648 silly gunzTarPerm extractEntry visitors/es6-template-visitors.js
+649 silly gunzTarPerm modified mode [ 'visitors/es6-template-visitors.js', 420, 436 ]
+650 silly gunzTarPerm extractEntry visitors/es7-rest-property-helpers.js
+651 silly gunzTarPerm modified mode [ 'visitors/es7-rest-property-helpers.js', 420, 436 ]
+652 info preinstall through@2.3.8
+653 verbose readDependencies using package.json deps
+654 verbose readDependencies using package.json deps
+655 silly resolved []
+656 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through
+657 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/through
+658 verbose linkStuff [ false,
+658 verbose linkStuff   false,
+658 verbose linkStuff   false,
+658 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules' ]
+659 info linkStuff through@2.3.8
+660 verbose linkBins through@2.3.8
+661 verbose linkMans through@2.3.8
+662 verbose rebuildBundles through@2.3.8
+663 info install through@2.3.8
+664 info postinstall through@2.3.8
+665 silly gunzTarPerm extractEntry visitors/es7-spread-property-visitors.js
+666 silly gunzTarPerm modified mode [ 'visitors/es7-spread-property-visitors.js', 420, 436 ]
+667 silly gunzTarPerm extractEntry visitors/reserved-words-helper.js
+668 silly gunzTarPerm modified mode [ 'visitors/reserved-words-helper.js', 420, 436 ]
+669 silly gunzTarPerm extractEntry visitors/reserved-words-visitors.js
+670 silly gunzTarPerm modified mode [ 'visitors/reserved-words-visitors.js', 420, 436 ]
+671 silly gunzTarPerm extractEntry visitors/es6-arrow-function-visitors.js
+672 silly gunzTarPerm modified mode [ 'visitors/es6-arrow-function-visitors.js', 420, 436 ]
+673 silly gunzTarPerm extractEntry visitors/es6-rest-param-visitors.js
+674 silly gunzTarPerm modified mode [ 'visitors/es6-rest-param-visitors.js', 420, 436 ]
+675 silly gunzTarPerm extractEntry visitors/__tests__/es6-arrow-function-visitors-test.js
+676 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-arrow-function-visitors-test.js',
+676 silly gunzTarPerm   420,
+676 silly gunzTarPerm   436 ]
+677 silly gunzTarPerm extractEntry visitors/__tests__/es6-object-short-notation-visitors-test.js
+678 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-object-short-notation-visitors-test.js',
+678 silly gunzTarPerm   420,
+678 silly gunzTarPerm   436 ]
+679 silly gunzTarPerm extractEntry visitors/__tests__/es6-rest-param-visitors-test.js
+680 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-rest-param-visitors-test.js',
+680 silly gunzTarPerm   420,
+680 silly gunzTarPerm   436 ]
+681 silly gunzTarPerm extractEntry visitors/__tests__/es6-template-visitors-test.js
+682 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-template-visitors-test.js', 420, 436 ]
+683 silly gunzTarPerm extractEntry visitors/__tests__/es7-rest-property-helpers-test.js
+684 silly gunzTarPerm modified mode [ 'visitors/__tests__/es7-rest-property-helpers-test.js',
+684 silly gunzTarPerm   420,
+684 silly gunzTarPerm   436 ]
+685 silly gunzTarPerm extractEntry visitors/__tests__/es6-object-concise-method-visitors-test.js
+686 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-object-concise-method-visitors-test.js',
+686 silly gunzTarPerm   420,
+686 silly gunzTarPerm   436 ]
+687 silly gunzTarPerm extractEntry visitors/__tests__/type-syntax-test.js
+688 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-syntax-test.js', 420, 436 ]
+689 silly gunzTarPerm extractEntry visitors/__tests__/reserved-words-test.js
+690 silly gunzTarPerm modified mode [ 'visitors/__tests__/reserved-words-test.js', 420, 436 ]
+691 silly gunzTarPerm extractEntry visitors/__tests__/type-alias-syntax-test.js
+692 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-alias-syntax-test.js', 420, 436 ]
+693 silly gunzTarPerm extractEntry visitors/__tests__/type-class-syntax-test.js
+694 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-class-syntax-test.js', 420, 436 ]
+695 silly gunzTarPerm extractEntry visitors/__tests__/type-function-syntax-test.js
+696 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-function-syntax-test.js', 420, 436 ]
+697 silly gunzTarPerm extractEntry visitors/__tests__/es6-es7-object-integration-test.js
+698 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-es7-object-integration-test.js',
+698 silly gunzTarPerm   420,
+698 silly gunzTarPerm   436 ]
+699 silly gunzTarPerm extractEntry visitors/__tests__/type-interface-syntax-test.js
+700 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-interface-syntax-test.js', 420, 436 ]
+701 silly gunzTarPerm extractEntry visitors/__tests__/es6-destructuring-visitors-test.js
+702 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-destructuring-visitors-test.js',
+702 silly gunzTarPerm   420,
+702 silly gunzTarPerm   436 ]
+703 silly gunzTarPerm extractEntry visitors/__tests__/type-object-method-syntax-test.js
+704 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-object-method-syntax-test.js',
+704 silly gunzTarPerm   420,
+704 silly gunzTarPerm   436 ]
+705 silly gunzTarPerm extractEntry visitors/__tests__/es6-class-visitors-test.js
+706 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-class-visitors-test.js', 420, 436 ]
+707 silly gunzTarPerm extractEntry visitors/__tests__/type-pattern-syntax-test.js
+708 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-pattern-syntax-test.js', 420, 436 ]
+709 silly gunzTarPerm extractEntry visitors/__tests__/es6-call-spread-visitors-test.js
+710 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-call-spread-visitors-test.js',
+710 silly gunzTarPerm   420,
+710 silly gunzTarPerm   436 ]
+711 silly gunzTarPerm extractEntry visitors/__tests__/type-variable-declaration-syntax-test.js
+712 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-variable-declaration-syntax-test.js',
+712 silly gunzTarPerm   420,
+712 silly gunzTarPerm   436 ]
+713 silly gunzTarPerm extractEntry visitors/__tests__/es7-spread-property-visitors-test.js
+714 silly gunzTarPerm modified mode [ 'visitors/__tests__/es7-spread-property-visitors-test.js',
+714 silly gunzTarPerm   420,
+714 silly gunzTarPerm   436 ]
+715 silly gunzTarPerm extractEntry visitors/__tests__/gen/generate-type-syntax-test.js
+716 silly gunzTarPerm modified mode [ 'visitors/__tests__/gen/generate-type-syntax-test.js',
+716 silly gunzTarPerm   420,
+716 silly gunzTarPerm   436 ]
+717 silly gunzTarPerm extractEntry visitors/__tests__/gen/type-syntax-test.rec.js
+718 silly gunzTarPerm modified mode [ 'visitors/__tests__/gen/type-syntax-test.rec.js', 420, 436 ]
+719 silly lockFile 2acf9548--envify-node-modules-jstransform tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+720 silly lockFile 2acf9548--envify-node-modules-jstransform tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+721 silly lockFile d6eea899-m-jstransform-10-1-0-package-tgz tar:///home/niole/.npm/jstransform/10.1.0/package.tgz
+722 silly lockFile d6eea899-m-jstransform-10-1-0-package-tgz tar:///home/niole/.npm/jstransform/10.1.0/package.tgz
+723 info preinstall jstransform@10.1.0
+724 verbose readDependencies using package.json deps
+725 verbose readDependencies using package.json deps
+726 verbose cache add [ 'base62@0.1.1', null ]
+727 verbose cache add name=undefined spec="base62@0.1.1" args=["base62@0.1.1",null]
+728 verbose parsed url { protocol: null,
+728 verbose parsed url   slashes: null,
+728 verbose parsed url   auth: null,
+728 verbose parsed url   host: null,
+728 verbose parsed url   port: null,
+728 verbose parsed url   hostname: null,
+728 verbose parsed url   hash: null,
+728 verbose parsed url   search: null,
+728 verbose parsed url   query: null,
+728 verbose parsed url   pathname: 'base62@0.1.1',
+728 verbose parsed url   path: 'base62@0.1.1',
+728 verbose parsed url   href: 'base62@0.1.1' }
+729 verbose cache add [ 'esprima-fb@13001.1001.0-dev-harmony-fb', null ]
+730 verbose cache add name=undefined spec="esprima-fb@13001.1001.0-dev-harmony-fb" args=["esprima-fb@13001.1001.0-dev-harmony-fb",null]
+731 verbose parsed url { protocol: null,
+731 verbose parsed url   slashes: null,
+731 verbose parsed url   auth: null,
+731 verbose parsed url   host: null,
+731 verbose parsed url   port: null,
+731 verbose parsed url   hostname: null,
+731 verbose parsed url   hash: null,
+731 verbose parsed url   search: null,
+731 verbose parsed url   query: null,
+731 verbose parsed url   pathname: 'esprima-fb@13001.1001.0-dev-harmony-fb',
+731 verbose parsed url   path: 'esprima-fb@13001.1001.0-dev-harmony-fb',
+731 verbose parsed url   href: 'esprima-fb@13001.1001.0-dev-harmony-fb' }
+732 verbose cache add [ 'source-map@0.1.31', null ]
+733 verbose cache add name=undefined spec="source-map@0.1.31" args=["source-map@0.1.31",null]
+734 verbose parsed url { protocol: null,
+734 verbose parsed url   slashes: null,
+734 verbose parsed url   auth: null,
+734 verbose parsed url   host: null,
+734 verbose parsed url   port: null,
+734 verbose parsed url   hostname: null,
+734 verbose parsed url   hash: null,
+734 verbose parsed url   search: null,
+734 verbose parsed url   query: null,
+734 verbose parsed url   pathname: 'source-map@0.1.31',
+734 verbose parsed url   path: 'source-map@0.1.31',
+734 verbose parsed url   href: 'source-map@0.1.31' }
+735 verbose cache add name="base62" spec="0.1.1" args=["base62","0.1.1"]
+736 verbose parsed url { protocol: null,
+736 verbose parsed url   slashes: null,
+736 verbose parsed url   auth: null,
+736 verbose parsed url   host: null,
+736 verbose parsed url   port: null,
+736 verbose parsed url   hostname: null,
+736 verbose parsed url   hash: null,
+736 verbose parsed url   search: null,
+736 verbose parsed url   query: null,
+736 verbose parsed url   pathname: '0.1.1',
+736 verbose parsed url   path: '0.1.1',
+736 verbose parsed url   href: '0.1.1' }
+737 verbose addNamed [ 'base62', '0.1.1' ]
+738 verbose addNamed [ '0.1.1', '0.1.1' ]
+739 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
+740 verbose lock base62@0.1.1 /home/niole/.npm/c24f39ea-base62-0-1-1.lock
+741 verbose cache add name="esprima-fb" spec="13001.1001.0-dev-harmony-fb" args=["esprima-fb","13001.1001.0-dev-harmony-fb"]
+742 verbose parsed url { protocol: null,
+742 verbose parsed url   slashes: null,
+742 verbose parsed url   auth: null,
+742 verbose parsed url   host: null,
+742 verbose parsed url   port: null,
+742 verbose parsed url   hostname: null,
+742 verbose parsed url   hash: null,
+742 verbose parsed url   search: null,
+742 verbose parsed url   query: null,
+742 verbose parsed url   pathname: '13001.1001.0-dev-harmony-fb',
+742 verbose parsed url   path: '13001.1001.0-dev-harmony-fb',
+742 verbose parsed url   href: '13001.1001.0-dev-harmony-fb' }
+743 verbose addNamed [ 'esprima-fb', '13001.1001.0-dev-harmony-fb' ]
+744 verbose addNamed [ '13001.1001.0-dev-harmony-fb', '13001.1001.0-dev-harmony-fb' ]
+745 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
+746 verbose lock esprima-fb@13001.1001.0-dev-harmony-fb /home/niole/.npm/b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb.lock
+747 verbose cache add name="source-map" spec="0.1.31" args=["source-map","0.1.31"]
+748 verbose parsed url { protocol: null,
+748 verbose parsed url   slashes: null,
+748 verbose parsed url   auth: null,
+748 verbose parsed url   host: null,
+748 verbose parsed url   port: null,
+748 verbose parsed url   hostname: null,
+748 verbose parsed url   hash: null,
+748 verbose parsed url   search: null,
+748 verbose parsed url   query: null,
+748 verbose parsed url   pathname: '0.1.31',
+748 verbose parsed url   path: '0.1.31',
+748 verbose parsed url   href: '0.1.31' }
+749 verbose addNamed [ 'source-map', '0.1.31' ]
+750 verbose addNamed [ '0.1.31', '0.1.31' ]
+751 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+752 verbose lock source-map@0.1.31 /home/niole/.npm/da25d7af-source-map-0-1-31.lock
+753 verbose request where is /base62
+754 verbose request registry https://registry.npmjs.org/
+755 verbose url raw /base62
+756 verbose url resolving [ 'https://registry.npmjs.org/', './base62' ]
+757 verbose url resolved https://registry.npmjs.org/base62
+758 verbose request where is https://registry.npmjs.org/base62
+759 info trying registry request attempt 1 at 22:14:20
+760 verbose etag "BQZ7WJ20DXU0D6FF0L2UQ5RG9"
+761 http GET https://registry.npmjs.org/base62
+762 verbose request where is /esprima-fb
+763 verbose request registry https://registry.npmjs.org/
+764 verbose url raw /esprima-fb
+765 verbose url resolving [ 'https://registry.npmjs.org/', './esprima-fb' ]
+766 verbose url resolved https://registry.npmjs.org/esprima-fb
+767 verbose request where is https://registry.npmjs.org/esprima-fb
+768 info trying registry request attempt 1 at 22:14:20
+769 verbose etag "85UWFJYL0GWZ7RFK40KJ9SJSN"
+770 http GET https://registry.npmjs.org/esprima-fb
+771 verbose request where is /source-map
+772 verbose request registry https://registry.npmjs.org/
+773 verbose url raw /source-map
+774 verbose url resolving [ 'https://registry.npmjs.org/', './source-map' ]
+775 verbose url resolved https://registry.npmjs.org/source-map
+776 verbose request where is https://registry.npmjs.org/source-map
+777 info trying registry request attempt 1 at 22:14:20
+778 verbose etag "BGLUL5IDZT0PJ3FIRURDG4DEE"
+779 http GET https://registry.npmjs.org/source-map
+780 http 304 https://registry.npmjs.org/source-map
+781 silly registry.get cb [ 304,
+781 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:20 GMT',
+781 silly registry.get     via: '1.1 varnish',
+781 silly registry.get     'cache-control': 'max-age=60',
+781 silly registry.get     etag: '"BGLUL5IDZT0PJ3FIRURDG4DEE"',
+781 silly registry.get     age: '46',
+781 silly registry.get     connection: 'keep-alive',
+781 silly registry.get     'x-served-by': 'cache-jfk1025-JFK',
+781 silly registry.get     'x-cache': 'HIT',
+781 silly registry.get     'x-cache-hits': '862',
+781 silly registry.get     'x-timer': 'S1436148860.785478,VS0,VE0',
+781 silly registry.get     vary: 'Accept' } ]
+782 verbose etag https://registry.npmjs.org/source-map from cache
+783 http 304 https://registry.npmjs.org/base62
+784 silly registry.get cb [ 304,
+784 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:20 GMT',
+784 silly registry.get     via: '1.1 varnish',
+784 silly registry.get     'cache-control': 'max-age=60',
+784 silly registry.get     etag: '"BQZ7WJ20DXU0D6FF0L2UQ5RG9"',
+784 silly registry.get     age: '18',
+784 silly registry.get     connection: 'keep-alive',
+784 silly registry.get     'x-served-by': 'cache-atl6234-ATL',
+784 silly registry.get     'x-cache': 'HIT',
+784 silly registry.get     'x-cache-hits': '1',
+784 silly registry.get     'x-timer': 'S1436148860.828624,VS0,VE1',
+784 silly registry.get     vary: 'Accept' } ]
+785 verbose etag https://registry.npmjs.org/base62 from cache
+786 http 304 https://registry.npmjs.org/esprima-fb
+787 silly registry.get cb [ 304,
+787 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:20 GMT',
+787 silly registry.get     via: '1.1 varnish',
+787 silly registry.get     'cache-control': 'max-age=60',
+787 silly registry.get     etag: '"85UWFJYL0GWZ7RFK40KJ9SJSN"',
+787 silly registry.get     age: '57',
+787 silly registry.get     connection: 'keep-alive',
+787 silly registry.get     'x-served-by': 'cache-atl6228-ATL',
+787 silly registry.get     'x-cache': 'HIT',
+787 silly registry.get     'x-cache-hits': '1',
+787 silly registry.get     'x-timer': 'S1436148860.865177,VS0,VE1',
+787 silly registry.get     vary: 'Accept' } ]
+788 verbose etag https://registry.npmjs.org/esprima-fb from cache
+789 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+790 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
+791 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
+792 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
+793 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
+794 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
+795 silly resolved [ { name: 'source-map',
+795 silly resolved     description: 'Generates and consumes source maps',
+795 silly resolved     version: '0.1.31',
+795 silly resolved     homepage: 'https://github.com/mozilla/source-map',
+795 silly resolved     author: { name: 'Nick Fitzgerald', email: 'nfitzgerald@mozilla.com' },
+795 silly resolved     contributors:
+795 silly resolved      [ [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object],
+795 silly resolved        [Object] ],
+795 silly resolved     repository: { type: 'git', url: 'http://github.com/mozilla/source-map.git' },
+795 silly resolved     directories: { lib: './lib' },
+795 silly resolved     main: './lib/source-map.js',
+795 silly resolved     engines: { node: '>=0.8.0' },
+795 silly resolved     licenses: [ [Object] ],
+795 silly resolved     dependencies: { amdefine: '>=0.0.4' },
+795 silly resolved     devDependencies: { dryice: '>=0.4.8' },
+795 silly resolved     scripts:
+795 silly resolved      { test: 'node test/run-tests.js',
+795 silly resolved        build: 'node Makefile.dryice.js' },
+795 silly resolved     _id: 'source-map@0.1.31',
+795 silly resolved     dist:
+795 silly resolved      { shasum: '9f704d0d69d9e138a81badf6ebb4fde33d151c61',
+795 silly resolved        tarball: 'http://registry.npmjs.org/source-map/-/source-map-0.1.31.tgz' },
+795 silly resolved     _from: 'source-map@0.1.31',
+795 silly resolved     _npmVersion: '1.2.18',
+795 silly resolved     _npmUser: { name: 'nickfitzgerald', email: 'fitzgen@gmail.com' },
+795 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+795 silly resolved     _shasum: '9f704d0d69d9e138a81badf6ebb4fde33d151c61',
+795 silly resolved     _resolved: 'https://registry.npmjs.org/source-map/-/source-map-0.1.31.tgz',
+795 silly resolved     bugs: { url: 'https://github.com/mozilla/source-map/issues' },
+795 silly resolved     readme: 'ERROR: No README data found!' },
+795 silly resolved   { author:
+795 silly resolved      { name: 'Andrew Nesbitt',
+795 silly resolved        email: 'andrewnez@gmail.com',
+795 silly resolved        url: 'http://andrew-nesbitt.com/' },
+795 silly resolved     name: 'base62',
+795 silly resolved     description: 'Javascript Base62 encode/decoder',
+795 silly resolved     keywords: [ 'base-62' ],
+795 silly resolved     version: '0.1.1',
+795 silly resolved     repository: { type: 'git', url: 'git://github.com/andrew/base62.js.git' },
+795 silly resolved     main: 'base62.js',
+795 silly resolved     engines: { node: '*' },
+795 silly resolved     scripts: { test: 'mocha test' },
+795 silly resolved     devDependencies: { mocha: '1.7.x' },
+795 silly resolved     _id: 'base62@0.1.1',
+795 silly resolved     dist:
+795 silly resolved      { shasum: '7b4174c2f94449753b11c2651c083da841a7b084',
+795 silly resolved        tarball: 'http://registry.npmjs.org/base62/-/base62-0.1.1.tgz' },
+795 silly resolved     _npmVersion: '1.1.65',
+795 silly resolved     _npmUser: { name: 'andrewnez', email: 'andrewnez@gmail.com' },
+795 silly resolved     maintainers: [ [Object] ],
+795 silly resolved     directories: {},
+795 silly resolved     _shasum: '7b4174c2f94449753b11c2651c083da841a7b084',
+795 silly resolved     _from: 'base62@0.1.1',
+795 silly resolved     _resolved: 'https://registry.npmjs.org/base62/-/base62-0.1.1.tgz',
+795 silly resolved     bugs: { url: 'https://github.com/andrew/base62.js/issues' },
+795 silly resolved     readme: 'ERROR: No README data found!',
+795 silly resolved     homepage: 'https://github.com/andrew/base62.js' },
+795 silly resolved   { name: 'esprima-fb',
+795 silly resolved     description: 'Facebook-specific fork of the esprima project',
+795 silly resolved     homepage: 'https://github.com/facebook/esprima/tree/fb-harmony',
+795 silly resolved     main: 'esprima.js',
+795 silly resolved     bin:
+795 silly resolved      { esparse: './bin/esparse.js',
+795 silly resolved        esvalidate: './bin/esvalidate.js' },
+795 silly resolved     version: '13001.1001.0-dev-harmony-fb',
+795 silly resolved     files:
+795 silly resolved      [ 'bin',
+795 silly resolved        'test/run.js',
+795 silly resolved        'test/runner.js',
+795 silly resolved        'test/test.js',
+795 silly resolved        'test/compat.js',
+795 silly resolved        'test/reflect.js',
+795 silly resolved        'esprima.js' ],
+795 silly resolved     engines: { node: '>=0.4.0' },
+795 silly resolved     author: { name: 'Ariya Hidayat', email: 'ariya.hidayat@gmail.com' },
+795 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+795 silly resolved     repository: { type: 'git', url: 'http://github.com/facebook/esprima.git' },
+795 silly resolved     bugs: { url: 'http://issues.esprima.org' },
+795 silly resolved     licenses: [ [Object] ],
+795 silly resolved     devDependencies:
+795 silly resolved      { eslint: '~0.12.0',
+795 silly resolved        jscs: '~1.10.0',
+795 silly resolved        istanbul: '~0.2.6',
+795 silly resolved        'escomplex-js': '1.0.0',
+795 silly resolved        'complexity-report': '~1.1.1',
+795 silly resolved        regenerate: '~0.5.4',
+795 silly resolved        'unicode-6.3.0': '~0.1.0',
+795 silly resolved        'json-diff': '~0.3.1',
+795 silly resolved        commander: '~2.5.0' },
+795 silly resolved     scripts:
+795 silly resolved      { 'generate-regex': 'node tools/generate-identifier-regex.js',
+795 silly resolved        test: 'node test/run.js && npm run lint && npm run coverage',
+795 silly resolved        lint: 'npm run check-version && npm run eslint && npm run jscs && npm run complexity',
+795 silly resolved        'check-version': 'node tools/check-version.js',
+795 silly resolved        jscs: 'jscs esprima.js test/*test.js',
+795 silly resolved        eslint: 'node node_modules/eslint/bin/eslint.js esprima.js',
+795 silly resolved        complexity: 'node tools/list-complexity.js && cr -s -l -w --maxcyc 18 esprima.js',
+795 silly resolved        coverage: 'npm run analyze-coverage && npm run check-coverage',
+795 silly resolved        'analyze-coverage': 'node node_modules/istanbul/lib/cli.js cover test/runner.js',
+795 silly resolved        'check-coverage': 'node node_modules/istanbul/lib/cli.js check-coverage --statement 100 --branch 100 --function 100',
+795 silly resolved        benchmark: 'node test/benchmarks.js',
+795 silly resolved        'benchmark-quick': 'node test/benchmarks.js quick' },
+795 silly resolved     gitHead: 'a3ae0c054867db61166dd72affc579710b36476d',
+795 silly resolved     _id: 'esprima-fb@13001.1001.0-dev-harmony-fb',
+795 silly resolved     _shasum: '633acdb40d9bd4db8a1c1d68c06a942959fad2b0',
+795 silly resolved     _from: 'esprima-fb@13001.1001.0-dev-harmony-fb',
+795 silly resolved     _npmVersion: '1.4.16',
+795 silly resolved     _npmUser: { name: 'gabelevi', email: 'gabelevi@gmail.com' },
+795 silly resolved     dist:
+795 silly resolved      { shasum: '633acdb40d9bd4db8a1c1d68c06a942959fad2b0',
+795 silly resolved        tarball: 'http://registry.npmjs.org/esprima-fb/-/esprima-fb-13001.1001.0-dev-harmony-fb.tgz' },
+795 silly resolved     directories: {},
+795 silly resolved     _resolved: 'https://registry.npmjs.org/esprima-fb/-/esprima-fb-13001.1001.0-dev-harmony-fb.tgz',
+795 silly resolved     readme: 'ERROR: No README data found!' } ]
+796 info install source-map@0.1.31 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+797 info install base62@0.1.1 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+798 info install esprima-fb@13001.1001.0-dev-harmony-fb into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+799 info installOne source-map@0.1.31
+800 info installOne base62@0.1.1
+801 info installOne esprima-fb@13001.1001.0-dev-harmony-fb
+802 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map unbuild
+803 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62 unbuild
+804 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb unbuild
+805 verbose tar unpack /home/niole/.npm/source-map/0.1.31/package.tgz
+806 silly lockFile 0ff47f95-ransform-node-modules-source-map tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+807 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map /home/niole/.npm/0ff47f95-ransform-node-modules-source-map.lock
+808 silly lockFile 72393da2-pm-source-map-0-1-31-package-tgz tar:///home/niole/.npm/source-map/0.1.31/package.tgz
+809 verbose lock tar:///home/niole/.npm/source-map/0.1.31/package.tgz /home/niole/.npm/72393da2-pm-source-map-0-1-31-package-tgz.lock
+810 verbose tar unpack /home/niole/.npm/base62/0.1.1/package.tgz
+811 silly lockFile cd901fbd--jstransform-node-modules-base62 tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
+812 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62 /home/niole/.npm/cd901fbd--jstransform-node-modules-base62.lock
+813 silly lockFile 17b2aa96-ole-npm-base62-0-1-1-package-tgz tar:///home/niole/.npm/base62/0.1.1/package.tgz
+814 verbose lock tar:///home/niole/.npm/base62/0.1.1/package.tgz /home/niole/.npm/17b2aa96-ole-npm-base62-0-1-1-package-tgz.lock
+815 verbose tar unpack /home/niole/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
+816 silly lockFile 900e89db-ransform-node-modules-esprima-fb tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
+817 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb /home/niole/.npm/900e89db-ransform-node-modules-esprima-fb.lock
+818 silly lockFile 2c81d0dc-001-0-dev-harmony-fb-package-tgz tar:///home/niole/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
+819 verbose lock tar:///home/niole/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz /home/niole/.npm/2c81d0dc-001-0-dev-harmony-fb-package-tgz.lock
+820 silly gunzTarPerm modes [ '775', '664' ]
+821 silly gunzTarPerm modes [ '775', '664' ]
+822 silly gunzTarPerm modes [ '775', '664' ]
+823 silly gunzTarPerm extractEntry package.json
+824 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+825 silly gunzTarPerm extractEntry package.json
+826 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+827 silly gunzTarPerm extractEntry package.json
+828 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+829 silly gunzTarPerm extractEntry .npmignore
+830 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+831 silly gunzTarPerm extractEntry README.md
+832 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+833 silly gunzTarPerm extractEntry LICENSE
+834 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+835 silly gunzTarPerm extractEntry base62.js
+836 silly gunzTarPerm modified mode [ 'base62.js', 420, 436 ]
+837 silly gunzTarPerm extractEntry README.md
+838 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+839 silly gunzTarPerm extractEntry esprima.js
+840 silly gunzTarPerm modified mode [ 'esprima.js', 420, 436 ]
+841 silly gunzTarPerm extractEntry .travis.yml
+842 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+843 silly gunzTarPerm extractEntry Readme.md
+844 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+845 silly gunzTarPerm extractEntry LICENSE
+846 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+847 silly gunzTarPerm extractEntry bin/esparse.js
+848 silly gunzTarPerm modified mode [ 'bin/esparse.js', 493, 509 ]
+849 silly gunzTarPerm extractEntry Makefile.dryice.js
+850 silly gunzTarPerm modified mode [ 'Makefile.dryice.js', 420, 436 ]
+851 silly gunzTarPerm extractEntry .travis.yml
+852 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
+853 silly gunzTarPerm extractEntry test/test.js
+854 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
+855 silly gunzTarPerm extractEntry bin/esvalidate.js
+856 silly gunzTarPerm modified mode [ 'bin/esvalidate.js', 493, 509 ]
+857 silly gunzTarPerm extractEntry test/compat.js
+858 silly gunzTarPerm modified mode [ 'test/compat.js', 420, 436 ]
+859 silly gunzTarPerm extractEntry test/reflect.js
+860 silly gunzTarPerm modified mode [ 'test/reflect.js', 420, 436 ]
+861 silly gunzTarPerm extractEntry CHANGELOG.md
+862 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+863 silly gunzTarPerm extractEntry build/assert-shim.js
+864 silly gunzTarPerm modified mode [ 'build/assert-shim.js', 420, 436 ]
+865 silly gunzTarPerm extractEntry test/run.js
+866 silly gunzTarPerm modified mode [ 'test/run.js', 420, 436 ]
+867 silly lockFile cd901fbd--jstransform-node-modules-base62 tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
+868 silly lockFile cd901fbd--jstransform-node-modules-base62 tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
+869 silly gunzTarPerm extractEntry build/mini-require.js
+870 silly gunzTarPerm modified mode [ 'build/mini-require.js', 420, 436 ]
+871 silly gunzTarPerm extractEntry build/suffix-browser.js
+872 silly gunzTarPerm modified mode [ 'build/suffix-browser.js', 420, 436 ]
+873 silly lockFile 17b2aa96-ole-npm-base62-0-1-1-package-tgz tar:///home/niole/.npm/base62/0.1.1/package.tgz
+874 silly lockFile 17b2aa96-ole-npm-base62-0-1-1-package-tgz tar:///home/niole/.npm/base62/0.1.1/package.tgz
+875 info preinstall base62@0.1.1
+876 verbose readDependencies using package.json deps
+877 verbose readDependencies using package.json deps
+878 silly resolved []
+879 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
+880 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
+881 verbose linkStuff [ false,
+881 verbose linkStuff   false,
+881 verbose linkStuff   false,
+881 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
+882 info linkStuff base62@0.1.1
+883 verbose linkBins base62@0.1.1
+884 verbose linkMans base62@0.1.1
+885 verbose rebuildBundles base62@0.1.1
+886 info install base62@0.1.1
+887 info postinstall base62@0.1.1
+888 silly gunzTarPerm extractEntry build/test-prefix.js
+889 silly gunzTarPerm modified mode [ 'build/test-prefix.js', 420, 436 ]
+890 silly gunzTarPerm extractEntry build/test-suffix.js
+891 silly gunzTarPerm modified mode [ 'build/test-suffix.js', 420, 436 ]
+892 silly gunzTarPerm extractEntry build/prefix-source-map.jsm
+893 silly gunzTarPerm modified mode [ 'build/prefix-source-map.jsm', 420, 436 ]
+894 silly gunzTarPerm extractEntry build/prefix-utils.jsm
+895 silly gunzTarPerm modified mode [ 'build/prefix-utils.jsm', 420, 436 ]
+896 silly gunzTarPerm extractEntry test/runner.js
+897 silly gunzTarPerm modified mode [ 'test/runner.js', 420, 436 ]
+898 silly gunzTarPerm extractEntry build/suffix-source-map.jsm
+899 silly gunzTarPerm modified mode [ 'build/suffix-source-map.jsm', 420, 436 ]
+900 silly gunzTarPerm extractEntry build/suffix-utils.jsm
+901 silly gunzTarPerm modified mode [ 'build/suffix-utils.jsm', 420, 436 ]
+902 silly gunzTarPerm extractEntry lib/source-map.js
+903 silly gunzTarPerm modified mode [ 'lib/source-map.js', 420, 436 ]
+904 silly gunzTarPerm extractEntry lib/source-map/array-set.js
+905 silly gunzTarPerm modified mode [ 'lib/source-map/array-set.js', 420, 436 ]
+906 silly gunzTarPerm extractEntry lib/source-map/base64-vlq.js
+907 silly gunzTarPerm modified mode [ 'lib/source-map/base64-vlq.js', 420, 436 ]
+908 silly gunzTarPerm extractEntry lib/source-map/base64.js
+909 silly gunzTarPerm modified mode [ 'lib/source-map/base64.js', 420, 436 ]
+910 silly gunzTarPerm extractEntry lib/source-map/binary-search.js
+911 silly gunzTarPerm modified mode [ 'lib/source-map/binary-search.js', 420, 436 ]
+912 silly gunzTarPerm extractEntry lib/source-map/source-map-consumer.js
+913 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-consumer.js', 420, 436 ]
+914 silly gunzTarPerm extractEntry lib/source-map/source-map-generator.js
+915 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-generator.js', 420, 436 ]
+916 silly gunzTarPerm extractEntry lib/source-map/source-node.js
+917 silly gunzTarPerm modified mode [ 'lib/source-map/source-node.js', 420, 436 ]
+918 silly gunzTarPerm extractEntry lib/source-map/util.js
+919 silly gunzTarPerm modified mode [ 'lib/source-map/util.js', 420, 436 ]
+920 silly gunzTarPerm extractEntry test/run-tests.js
+921 silly gunzTarPerm modified mode [ 'test/run-tests.js', 493, 509 ]
+922 silly gunzTarPerm extractEntry test/test.js
+923 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
+924 silly gunzTarPerm extractEntry test/source-map/test-api.js
+925 silly gunzTarPerm modified mode [ 'test/source-map/test-api.js', 420, 436 ]
+926 silly gunzTarPerm extractEntry test/source-map/test-array-set.js
+927 silly gunzTarPerm modified mode [ 'test/source-map/test-array-set.js', 420, 436 ]
+928 silly gunzTarPerm extractEntry test/source-map/test-base64-vlq.js
+929 silly gunzTarPerm modified mode [ 'test/source-map/test-base64-vlq.js', 420, 436 ]
+930 silly gunzTarPerm extractEntry test/source-map/test-base64.js
+931 silly gunzTarPerm modified mode [ 'test/source-map/test-base64.js', 420, 436 ]
+932 silly gunzTarPerm extractEntry test/source-map/test-binary-search.js
+933 silly gunzTarPerm modified mode [ 'test/source-map/test-binary-search.js', 420, 436 ]
+934 silly gunzTarPerm extractEntry test/source-map/test-dog-fooding.js
+935 silly gunzTarPerm modified mode [ 'test/source-map/test-dog-fooding.js', 420, 436 ]
+936 silly gunzTarPerm extractEntry test/source-map/test-source-map-consumer.js
+937 silly gunzTarPerm modified mode [ 'test/source-map/test-source-map-consumer.js', 420, 436 ]
+938 silly gunzTarPerm extractEntry test/source-map/test-source-map-generator.js
+939 silly gunzTarPerm modified mode [ 'test/source-map/test-source-map-generator.js', 420, 436 ]
+940 silly gunzTarPerm extractEntry test/source-map/test-source-node.js
+941 silly gunzTarPerm modified mode [ 'test/source-map/test-source-node.js', 420, 436 ]
+942 silly gunzTarPerm extractEntry test/source-map/util.js
+943 silly gunzTarPerm modified mode [ 'test/source-map/util.js', 420, 436 ]
+944 silly lockFile 0ff47f95-ransform-node-modules-source-map tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+945 silly lockFile 0ff47f95-ransform-node-modules-source-map tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+946 silly lockFile 72393da2-pm-source-map-0-1-31-package-tgz tar:///home/niole/.npm/source-map/0.1.31/package.tgz
+947 silly lockFile 72393da2-pm-source-map-0-1-31-package-tgz tar:///home/niole/.npm/source-map/0.1.31/package.tgz
+948 info preinstall source-map@0.1.31
+949 verbose readDependencies using package.json deps
+950 verbose readDependencies using package.json deps
+951 verbose cache add [ 'amdefine@>=0.0.4', null ]
+952 verbose cache add name=undefined spec="amdefine@>=0.0.4" args=["amdefine@>=0.0.4",null]
+953 verbose parsed url { protocol: null,
+953 verbose parsed url   slashes: null,
+953 verbose parsed url   auth: null,
+953 verbose parsed url   host: null,
+953 verbose parsed url   port: null,
+953 verbose parsed url   hostname: null,
+953 verbose parsed url   hash: null,
+953 verbose parsed url   search: null,
+953 verbose parsed url   query: null,
+953 verbose parsed url   pathname: 'amdefine@%3E=0.0.4',
+953 verbose parsed url   path: 'amdefine@%3E=0.0.4',
+953 verbose parsed url   href: 'amdefine@%3E=0.0.4' }
+954 verbose cache add name="amdefine" spec=">=0.0.4" args=["amdefine",">=0.0.4"]
+955 verbose parsed url { protocol: null,
+955 verbose parsed url   slashes: null,
+955 verbose parsed url   auth: null,
+955 verbose parsed url   host: null,
+955 verbose parsed url   port: null,
+955 verbose parsed url   hostname: null,
+955 verbose parsed url   hash: null,
+955 verbose parsed url   search: null,
+955 verbose parsed url   query: null,
+955 verbose parsed url   pathname: '%3E=0.0.4',
+955 verbose parsed url   path: '%3E=0.0.4',
+955 verbose parsed url   href: '%3E=0.0.4' }
+956 verbose addNamed [ 'amdefine', '>=0.0.4' ]
+957 verbose addNamed [ null, '>=0.0.4' ]
+958 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+959 verbose lock amdefine@>=0.0.4 /home/niole/.npm/165d2d7b-amdefine-0-0-4.lock
+960 silly addNameRange { name: 'amdefine', range: '>=0.0.4', hasData: false }
+961 verbose request where is /amdefine
+962 verbose request registry https://registry.npmjs.org/
+963 verbose url raw /amdefine
+964 verbose url resolving [ 'https://registry.npmjs.org/', './amdefine' ]
+965 verbose url resolved https://registry.npmjs.org/amdefine
+966 verbose request where is https://registry.npmjs.org/amdefine
+967 info trying registry request attempt 1 at 22:14:21
+968 verbose etag "4YYSFNXID9MUWP27KTSW2EKU8"
+969 http GET https://registry.npmjs.org/amdefine
+970 http 304 https://registry.npmjs.org/amdefine
+971 silly registry.get cb [ 304,
+971 silly registry.get   { date: 'Mon, 06 Jul 2015 02:14:21 GMT',
+971 silly registry.get     via: '1.1 varnish',
+971 silly registry.get     'cache-control': 'max-age=60',
+971 silly registry.get     etag: '"4YYSFNXID9MUWP27KTSW2EKU8"',
+971 silly registry.get     age: '24',
+971 silly registry.get     connection: 'keep-alive',
+971 silly registry.get     'x-served-by': 'cache-atl6225-ATL',
+971 silly registry.get     'x-cache': 'HIT',
+971 silly registry.get     'x-cache-hits': '1',
+971 silly registry.get     'x-timer': 'S1436148861.834827,VS0,VE2',
+971 silly registry.get     vary: 'Accept' } ]
+972 verbose etag https://registry.npmjs.org/amdefine from cache
+973 silly addNameRange number 2 { name: 'amdefine', range: '>=0.0.4', hasData: true }
+974 silly addNameRange versions [ 'amdefine',
+974 silly addNameRange   [ '0.0.1',
+974 silly addNameRange     '0.0.2',
+974 silly addNameRange     '0.0.3',
+974 silly addNameRange     '0.0.4',
+974 silly addNameRange     '0.0.5',
+974 silly addNameRange     '0.0.6',
+974 silly addNameRange     '0.0.7',
+974 silly addNameRange     '0.0.8',
+974 silly addNameRange     '0.1.0',
+974 silly addNameRange     '0.1.1' ] ]
+975 verbose addNamed [ 'amdefine', '0.1.1' ]
+976 verbose addNamed [ '0.1.1', '0.1.1' ]
+977 silly lockFile c62ba081-amdefine-0-1-1 amdefine@0.1.1
+978 verbose lock amdefine@0.1.1 /home/niole/.npm/c62ba081-amdefine-0-1-1.lock
+979 silly lockFile c62ba081-amdefine-0-1-1 amdefine@0.1.1
+980 silly lockFile c62ba081-amdefine-0-1-1 amdefine@0.1.1
+981 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+982 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
+983 silly resolved [ { name: 'amdefine',
+983 silly resolved     description: 'Provide AMD\'s define() API for declaring modules in the AMD format',
+983 silly resolved     version: '0.1.1',
+983 silly resolved     homepage: 'http://github.com/jrburke/amdefine',
+983 silly resolved     author:
+983 silly resolved      { name: 'James Burke',
+983 silly resolved        email: 'jrburke@gmail.com',
+983 silly resolved        url: 'http://github.com/jrburke' },
+983 silly resolved     license: 'BSD-3-Clause AND MIT',
+983 silly resolved     repository: { type: 'git', url: 'https://github.com/jrburke/amdefine.git' },
+983 silly resolved     main: './amdefine.js',
+983 silly resolved     engines: { node: '>=0.4.2' },
+983 silly resolved     gitHead: 'fcadcc8080f47084b973bac3b3c4b3dd3e0f957d',
+983 silly resolved     bugs: { url: 'https://github.com/jrburke/amdefine/issues' },
+983 silly resolved     _id: 'amdefine@0.1.1',
+983 silly resolved     scripts: {},
+983 silly resolved     _shasum: 'b5c75c532052dccd6a39c0064c772c8d57a06cd2',
+983 silly resolved     _from: 'amdefine@>=0.0.4',
+983 silly resolved     _npmVersion: '1.4.28',
+983 silly resolved     _npmUser: { name: 'jrburke', email: 'jrburke@gmail.com' },
+983 silly resolved     maintainers: [ [Object] ],
+983 silly resolved     dist:
+983 silly resolved      { shasum: 'b5c75c532052dccd6a39c0064c772c8d57a06cd2',
+983 silly resolved        tarball: 'http://registry.npmjs.org/amdefine/-/amdefine-0.1.1.tgz' },
+983 silly resolved     directories: {},
+983 silly resolved     _resolved: 'https://registry.npmjs.org/amdefine/-/amdefine-0.1.1.tgz',
+983 silly resolved     readme: 'ERROR: No README data found!' } ]
+984 info install amdefine@0.1.1 into /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+985 info installOne amdefine@0.1.1
+986 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine unbuild
+987 verbose tar unpack /home/niole/.npm/amdefine/0.1.1/package.tgz
+988 silly lockFile 705412eb-source-map-node-modules-amdefine tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
+989 verbose lock tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine /home/niole/.npm/705412eb-source-map-node-modules-amdefine.lock
+990 silly lockFile bf0eb16d-e-npm-amdefine-0-1-1-package-tgz tar:///home/niole/.npm/amdefine/0.1.1/package.tgz
+991 verbose lock tar:///home/niole/.npm/amdefine/0.1.1/package.tgz /home/niole/.npm/bf0eb16d-e-npm-amdefine-0-1-1-package-tgz.lock
+992 silly gunzTarPerm modes [ '775', '664' ]
+993 silly gunzTarPerm extractEntry package.json
+994 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+995 silly gunzTarPerm extractEntry README.md
+996 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+997 silly gunzTarPerm extractEntry LICENSE
+998 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+999 silly gunzTarPerm extractEntry amdefine.js
+1000 silly gunzTarPerm modified mode [ 'amdefine.js', 420, 436 ]
+1001 silly gunzTarPerm extractEntry intercept.js
+1002 silly gunzTarPerm modified mode [ 'intercept.js', 420, 436 ]
+1003 silly lockFile 705412eb-source-map-node-modules-amdefine tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
+1004 silly lockFile 705412eb-source-map-node-modules-amdefine tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
+1005 silly lockFile bf0eb16d-e-npm-amdefine-0-1-1-package-tgz tar:///home/niole/.npm/amdefine/0.1.1/package.tgz
+1006 silly lockFile bf0eb16d-e-npm-amdefine-0-1-1-package-tgz tar:///home/niole/.npm/amdefine/0.1.1/package.tgz
+1007 info preinstall amdefine@0.1.1
+1008 verbose readDependencies using package.json deps
+1009 verbose readDependencies using package.json deps
+1010 silly resolved []
+1011 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
+1012 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
+1013 verbose linkStuff [ false,
+1013 verbose linkStuff   false,
+1013 verbose linkStuff   false,
+1013 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules' ]
+1014 info linkStuff amdefine@0.1.1
+1015 verbose linkBins amdefine@0.1.1
+1016 verbose linkMans amdefine@0.1.1
+1017 verbose rebuildBundles amdefine@0.1.1
+1018 info install amdefine@0.1.1
+1019 info postinstall amdefine@0.1.1
+1020 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+1021 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
+1022 verbose linkStuff [ false,
+1022 verbose linkStuff   false,
+1022 verbose linkStuff   false,
+1022 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
+1023 info linkStuff source-map@0.1.31
+1024 verbose linkBins source-map@0.1.31
+1025 verbose linkMans source-map@0.1.31
+1026 verbose rebuildBundles source-map@0.1.31
+1027 verbose rebuildBundles [ 'amdefine' ]
+1028 info install source-map@0.1.31
+1029 info postinstall source-map@0.1.31
+1030 silly lockFile 900e89db-ransform-node-modules-esprima-fb tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
+1031 silly lockFile 900e89db-ransform-node-modules-esprima-fb tar:///home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
+1032 silly lockFile 2c81d0dc-001-0-dev-harmony-fb-package-tgz tar:///home/niole/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
+1033 silly lockFile 2c81d0dc-001-0-dev-harmony-fb-package-tgz tar:///home/niole/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
+1034 info preinstall esprima-fb@13001.1001.0-dev-harmony-fb
+1035 verbose readDependencies using package.json deps
+1036 verbose readDependencies using package.json deps
+1037 silly resolved []
+1038 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
+1039 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
+1040 verbose linkStuff [ false,
+1040 verbose linkStuff   false,
+1040 verbose linkStuff   false,
+1040 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
+1041 info linkStuff esprima-fb@13001.1001.0-dev-harmony-fb
+1042 verbose linkBins esprima-fb@13001.1001.0-dev-harmony-fb
+1043 verbose link bins [ { esparse: './bin/esparse.js',
+1043 verbose link bins     esvalidate: './bin/esvalidate.js' },
+1043 verbose link bins   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/.bin',
+1043 verbose link bins   false ]
+1044 verbose linkMans esprima-fb@13001.1001.0-dev-harmony-fb
+1045 verbose rebuildBundles esprima-fb@13001.1001.0-dev-harmony-fb
+1046 info install esprima-fb@13001.1001.0-dev-harmony-fb
+1047 info postinstall esprima-fb@13001.1001.0-dev-harmony-fb
+1048 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+1049 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules/jstransform
+1050 verbose linkStuff [ false,
+1050 verbose linkStuff   false,
+1050 verbose linkStuff   false,
+1050 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify/node_modules' ]
+1051 info linkStuff jstransform@10.1.0
+1052 verbose linkBins jstransform@10.1.0
+1053 verbose linkMans jstransform@10.1.0
+1054 verbose rebuildBundles jstransform@10.1.0
+1055 verbose rebuildBundles [ '.bin', 'base62', 'esprima-fb', 'source-map' ]
+1056 info install jstransform@10.1.0
+1057 info postinstall jstransform@10.1.0
+1058 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+1059 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/envify
+1060 verbose linkStuff [ false,
+1060 verbose linkStuff   false,
+1060 verbose linkStuff   false,
+1060 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules' ]
+1061 info linkStuff envify@3.4.0
+1062 verbose linkBins envify@3.4.0
+1063 verbose link bins [ { envify: 'bin/envify' },
+1063 verbose link bins   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/react/node_modules/.bin',
+1063 verbose link bins   false ]
+1064 verbose linkMans envify@3.4.0
+1065 verbose rebuildBundles envify@3.4.0
+1066 verbose rebuildBundles [ 'jstransform', 'through' ]
+1067 info install envify@3.4.0
+1068 info postinstall envify@3.4.0
+1069 verbose about to build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+1070 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/react
+1071 verbose linkStuff [ false,
+1071 verbose linkStuff   false,
+1071 verbose linkStuff   false,
+1071 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules' ]
+1072 info linkStuff react@0.12.2
+1073 verbose linkBins react@0.12.2
+1074 verbose linkMans react@0.12.2
+1075 verbose rebuildBundles react@0.12.2
+1076 verbose rebuildBundles [ '.bin', 'envify' ]
+1077 info install react@0.12.2
+1078 info postinstall react@0.12.2
+1079 info build /home/niole/code/javascript/Table-Highlight-Subset
+1080 verbose linkStuff [ false, false, false, '/home/niole/code/javascript' ]
+1081 info linkStuff RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1082 verbose linkBins RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1083 verbose linkMans RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1084 verbose rebuildBundles RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1085 verbose rebuildBundles [ '.bin',
+1085 verbose rebuildBundles   'body-parser',
+1085 verbose rebuildBundles   'browserify',
+1085 verbose rebuildBundles   'chartist',
+1085 verbose rebuildBundles   'cookie-parser',
+1085 verbose rebuildBundles   'd3',
+1085 verbose rebuildBundles   'debug',
+1085 verbose rebuildBundles   'dotenv',
+1085 verbose rebuildBundles   'express',
+1085 verbose rebuildBundles   'gulp',
+1085 verbose rebuildBundles   'gulp-concat',
+1085 verbose rebuildBundles   'gulp-html-replace',
+1085 verbose rebuildBundles   'gulp-inject',
+1085 verbose rebuildBundles   'gulp-react',
+1085 verbose rebuildBundles   'gulp-streamify',
+1085 verbose rebuildBundles   'gulp-uglify',
+1085 verbose rebuildBundles   'jade',
+1085 verbose rebuildBundles   'materialize-css',
+1085 verbose rebuildBundles   'mongodb',
+1085 verbose rebuildBundles   'mongoskin',
+1085 verbose rebuildBundles   'morgan',
+1085 verbose rebuildBundles   'react',
+1085 verbose rebuildBundles   'react-chartist',
+1085 verbose rebuildBundles   'react-slider',
+1085 verbose rebuildBundles   'reactify',
+1085 verbose rebuildBundles   'serve-favicon',
+1085 verbose rebuildBundles   'showdown',
+1085 verbose rebuildBundles   'start',
+1085 verbose rebuildBundles   'vinyl-buffer',
+1085 verbose rebuildBundles   'vinyl-source-stream',
+1085 verbose rebuildBundles   'watchify' ]
+1086 verbose rebuild bundle /home/niole/code/javascript/Table-Highlight-Subset/node_modules/start
+1087 info build /home/niole/code/javascript/Table-Highlight-Subset/node_modules/start
+1088 info preinstall start@0.1.1
+1089 verbose linkStuff [ false,
+1089 verbose linkStuff   false,
+1089 verbose linkStuff   false,
+1089 verbose linkStuff   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules' ]
+1090 info linkStuff start@0.1.1
+1091 verbose linkBins start@0.1.1
+1092 verbose link bins [ { start: './start' },
+1092 verbose link bins   '/home/niole/code/javascript/Table-Highlight-Subset/node_modules/.bin',
+1092 verbose link bins   false ]
+1093 verbose linkMans start@0.1.1
+1094 verbose rebuildBundles start@0.1.1
+1095 verbose rebuildBundles [ 'commander' ]
+1096 info install start@0.1.1
+1097 info postinstall start@0.1.1
+1098 info install RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1099 info postinstall RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1100 info prepublish RenderMarkdownWithReact-express-browserify-gulp-jade-tutorial@1.0.0
+1101 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+1101 error peerinvalid Peer react-chartist@0.7.0 wants react@>=0.13.0
+1101 error peerinvalid Peer react-slider@0.5.1 wants react@>=0.12.1
+1102 error System Linux 3.13.0-32-generic
+1103 error command "/usr/bin/node" "/usr/bin/npm" "install"
+1104 error cwd /home/niole/code/javascript/Table-Highlight-Subset
+1105 error node -v v0.10.37
+1106 error npm -v 1.4.28
+1107 error code EPEERINVALID
+1108 verbose exit [ 1, true ]
