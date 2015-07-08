@@ -2,19 +2,16 @@
 /*global React*/
 
 var React = require('react');
-
 var Table = React.createClass({
 
   getDefaultProps: function() {
     return {
       functionality: "highlight",
-      subset: [null,null],
-      display: null
+      subset: [null,null]
     };
   },
 
   propTypes: {
-    display: React.PropTypes.string,
     data: React.PropTypes.array,
     titles: React.PropTypes.array,
     getRange: React.PropTypes.func,
@@ -62,39 +59,69 @@ var Table = React.createClass({
 
   },
 
-  render: function() {
+ render: function() {
     var TableBody = [];
     var domifiedRow = [];
 
     var TableHeaders = this.props.titles.map(function(title){
       if (title.display === null ){
-        return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.title}</td> );
+        return ( React.createElement("td",{
+                                      onClick: this.getNewTitle.bind(null,title),
+                                      key: title.title
+                                      },
+                                      title.title
+                                    ));
+
       } else {
-        return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.display}</td> );
+        return ( React.createElement("td",{
+                                      onClick: this.getNewTitle.bind(null,title),
+                                      key: title.title
+                                      },
+                                      title.display
+                                    ));
       }
     }.bind(this));
 
     if (this.props.functionality === "highlight"){
 
-      this.state.data.forEach(function(row,i){
+      this.state.data.forEach(function(row){
 
         if (this.state.colHeader !== null){
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( React.createElement("td",{},row[attr]) );
             }
             if (row[this.state.colHeader] >= this.props.subset[0] &&
                  row[this.state.colHeader] <= this.props.subset[1]) {
-                TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
+                TableBody.push( React.createElement("tr",{
+                                                      id: "highlight",
+                                                      className: "text table-row"
+                                                      },
+                                                      domifiedRow
+                                                   )
+                              );
+
+
             } else {
-                TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
+                TableBody.push( React.createElement("tr",{
+                                                      className: "text table-row"
+                                                      },
+                                                      domifiedRow
+                                                   )
+                              );
              }
-          domifiedRow = [];
+           domifiedRow = [];
         } else {
 
           for (var attr in row){
-            domifiedRow.push( <td>{row[attr]}</td> );
+            domifiedRow.push( React.createElement("td",{},row[attr]) );
           }
-          TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
+          TableBody.push( React.createElement("tr",{
+                                                className: "text table-row"
+                                                },
+                                                domifiedRow
+                                             )
+                        );
+
           domifiedRow = [];
         }
       }.bind(this));
@@ -106,52 +133,81 @@ var Table = React.createClass({
           if (row[this.state.colHeader] >= this.props.subset[0] &&
               row[this.state.colHeader] <= this.props.subset[1]) {
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( React.createElement("td",{},row[attr]) );
             }
             if (i%2 === 0) {
-              TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+              TableBody.push( React.createElement("tr",{
+                                                    id: "odd",
+                                                    className: "text table-row"
+                                                    },
+                                                    domifiedRow
+                                                 )
+                            );
             }
             if (i%2 === 1){
-              TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+              TableBody.push( React.createElement("tr",{
+                                                    id: "even",
+                                                    className: "text table-row"
+                                                    },
+                                                    domifiedRow
+                                                 )
+                            );
             }
-              domifiedRow = [];
+            domifiedRow = [];
           }
+
+
         } else {
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( React.createElement("td",{},row[attr]) );
+              //domifiedRow.push( <td>{row[attr]}</td> );
           }
           if (i%2 === 0) {
-            TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+            TableBody.push( React.createElement("tr",{
+                                                  id: "odd",
+                                                  className: "text table-row"
+                                                  },
+                                                  domifiedRow
+                                               ));
+
           }
           if (i%2 === 1){
-            TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+            TableBody.push( React.createElement("tr",{
+                                                  id: "even",
+                                                  className: "text table-row"
+                                                  },
+                                                  domifiedRow
+                                               ));
+
           }
             domifiedRow = [];
         }
       }.bind(this));
     }
-    var display = "none";
-    if (this.props.display !== null){
-      display = "block";
-    }
 
     return(
-      <div>
-        <p style={{display: display}} className="filter-on text">filter on column: {this.state.displayTitle}</p>
-
-        <div className="display-box container-fluid">
-          <table className="table-row">
-            <th>
-              <tr id="col-titles" className="text table-row">{TableHeaders}</tr>
-            </th>
-            <tbody>
-              {TableBody}
-            </tbody>
-          </table>
-        </div>
-
-      </div>
-    );
+      React.createElement("div",{},
+       React.createElement("div",{
+                            className: "display-box container-fluid"
+                            },
+         React.createElement("table",{
+                              className: "table-row"
+                               },
+          React.createElement("th",{},
+            React.createElement("tr",{
+              id: "col-titles",
+              className: "text table-row"
+              },
+              TableHeaders
+          ),
+          React.createElement("tbody",{},
+                              TableBody
+          )
+        )
+       )
+      )
+    )
+   );
   }
 });
 
