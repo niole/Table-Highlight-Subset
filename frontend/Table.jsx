@@ -70,9 +70,9 @@ var Table = React.createClass({
 
     var TableHeaders = this.props.titles.map(function(title){
       if (title.display === null ){
-        return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.title}</td> );
+        return ( <td onClick={this.getNewTitle.bind(null,title)} className="display-null" ref={title.title}>{title.title}</td> );
       } else {
-        return ( <td onClick={this.getNewTitle.bind(null,title)} key={title.title}>{title.display}</td> );
+        return ( <td onClick={this.getNewTitle.bind(null,title)} className="display" ref={title.display}>{title.display}</td> );
       }
     }.bind(this));
 
@@ -80,20 +80,20 @@ var Table = React.createClass({
       this.state.data.forEach(function(row,i){
         if (this.state.Ubound !== null || this.state.Lbound !== null){
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( <td className={attr}>{row[attr]}</td> );
             }
             if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
-                TableBody.push( <tr id="highlight" className="text table-row">{domifiedRow}</tr> );
+                TableBody.push( <tr id="highlight" className="data text table-row">{domifiedRow}</tr> );
             } else {
-                TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+                TableBody.push( <tr id="odd" className="data text table-row">{domifiedRow}</tr> );
              }
           domifiedRow = [];
         } else {
 
           for (var attr in row){
-            domifiedRow.push( <td>{row[attr]}</td> );
+            domifiedRow.push( <td className={attr}>{row[attr]}</td> );
           }
-          TableBody.push( <tr className="text table-row">{domifiedRow}</tr> );
+          TableBody.push( <tr className="data text table-row">{domifiedRow}</tr> );
           domifiedRow = [];
         }
       }.bind(this));
@@ -104,25 +104,25 @@ var Table = React.createClass({
         if (this.state.Ubound !== null || this.state.Lbound !== null){
           if (row[sortOnTitle] >= this.state.Lbound && row[sortOnTitle] <= this.state.Ubound) {
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( <td className={attr}>{row[attr]}</td> );
             }
             if (i%2 === 0) {
-              TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+              TableBody.push( <tr id="odd" className="data text table-row">{domifiedRow}</tr> );
             }
             if (i%2 === 1){
-              TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+              TableBody.push( <tr id="even" className="data text table-row">{domifiedRow}</tr> );
             }
               domifiedRow = [];
           }
         } else {
             for (var attr in row){
-              domifiedRow.push( <td>{row[attr]}</td> );
+              domifiedRow.push( <td className={attr}>{row[attr]}</td> );
           }
           if (i%2 === 0) {
-            TableBody.push( <tr id="odd" className="text table-row">{domifiedRow}</tr> );
+            TableBody.push( <tr id="odd" className="data text table-row">{domifiedRow}</tr> );
           }
           if (i%2 === 1){
-            TableBody.push( <tr id="even" className="text table-row">{domifiedRow}</tr> );
+            TableBody.push( <tr id="even" className="data text table-row">{domifiedRow}</tr> );
           }
             domifiedRow = [];
         }
@@ -135,7 +135,7 @@ var Table = React.createClass({
 
     return(
       <div>
-        <h1 className="table-header text">{this.props.header}</h1>
+        <h1 id="x" className="table-header text">{this.props.header}</h1>
         <p className="filter-on text">filter on column: {this.state.displayTitle}</p>
 
         <div className="buttons">

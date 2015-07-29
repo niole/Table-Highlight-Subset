@@ -4,7 +4,8 @@
   "description": "Render markdown with ReactJS using the express framework, browserify for dependency resolution, the gulp build system, and jade templateing.",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "mocha --compilers .:test/compiler.js test/*test.js"
   },
   "devDependencies": {
     "browserify": "^9.0.8",
@@ -28,12 +29,16 @@
     "dotenv": "^1.1.0",
     "express": "^4.12.3",
     "jade": "^1.9.2",
+    "jsdom": "^3.1.1",
     "materialize-css": "^0.96.1",
+    "mocha": "2.2.1",
     "mongodb": "^1.4.35",
     "mongoskin": "^1.4.13",
     "morgan": "^1.5.2",
     "react": "^0.13.2",
     "react-slider": "^0.5.1",
+    "react-tools": "^0.13.3",
+    "selenium-webdriver": "2.45.1",
     "serve-favicon": "^2.2.0",
     "showdown": "^0.5.0"
   }

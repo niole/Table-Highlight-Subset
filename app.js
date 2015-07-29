@@ -42,6 +42,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded( { extended: true } ));
 app.use(cookieParser());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 /* --- Make db accessible to our router ---*/
@@ -54,6 +55,7 @@ app.use(function(req,res,next){
  *your database routes file.
  *My routes file is 'routes/rendermarkdown.js'*/
 app.use('/', routes);
+
 //app.use('/rendermarkdown', rendermarkdown);
 
 /// catch 405 and forwarding to error handler
